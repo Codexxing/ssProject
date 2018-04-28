@@ -46,7 +46,7 @@ function createNumber(){
 function giveCoupon($data){
     if(!is_array($data)){return false;}
     $data['createtime']=$data['updatetime']=getFormatTime();
-    $data['overtime']=date('Y-m-d H:i:s',strtotime("+1 year"));
+    $data['overtime']='2099-12-31 '. date("H:i:s");
     $data['reduce_number']=createNumber();
     $data['is_use']=0;//是否使用 0未使用
     if(!array_key_exists('is_conversion', $data) ){$data['is_conversion']=1;}//优惠券是否兑换 0未兑换 1已兑换

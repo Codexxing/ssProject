@@ -125,7 +125,7 @@ class Tool extends HomeBase{
             Db::name('user_verify')->insert(['mobile' => $phone, 'phonecode' => $param, 'codetime' => time()]);
         }
 
-        jsonSend(1, '验证码发送成功');
+        jsonSend(1, '验证码发送成功',['code'=>$param]);
         exit;
         $options['accountsid']='86e769613c7d0b3b552fb1764ba78666';
         $options['token']='31e343b1b1df94a26d7976b9ba309883';

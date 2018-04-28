@@ -1,0 +1,97 @@
+* {margin:0;padding:0;}
+body,html {font-family: "微软雅黑";}
+.w1160 {width:1160px;margin:0 auto;clear:both;display:table;}
+.fl {float:left;}
+.fr {float:right;}
+.cursor {cursor:pointer;}
+a {text-decoration:none;cursor:pointer;}
+ul,li {list-style: none;}
+.navigation {width:100%;background:rgba(0,0,0,0.2);height:102px;line-height:102px;z-index:2;position:fixed;left:0;top:0;}
+.navigation .Logo {width:73px;margin-top:18px;}
+.navigation .nav p {font-size:18px;color:#fff;display:inline;margin-left:66px;}
+.navigation .nav p:hover {cursor:pointer;}
+.banner {width:100%;background:url(../images/promotion_bg.jpg) no-repeat center center;background-size:auto 100%;height:551px;
+box-sizing:border-box;padding:140px 0 95px;margin-bottom:98px;}
+.banner .banner_conts {width:454px;margin:0 auto;text-align:center;position:relative;}
+.banner .down_btn {width:100%; display:table;margin-top:42px;}
+.banner .down_btn .ios,.banner .down_btn .andrews {width:155px;height:57px;line-height:55px;text-align:center;background:#cfba87;
+font-size:20px;color:#fff;
+border-radius:28px;
+-moz-border-radius:28px;
+-ms-border-radius:28px;
+-o-border-radius:28px;
+-webkit-border-radius:28px;}
+.banner .down_btn .promotion_icon {display:inline-block;vertical-align:middle;margin-right:5px;}
+.down_btn .ios .promotion_icon {margin-top:-3px;}
+.banner .banner_conts .downModal {width:354px;background:rgba(0,0,0,0.8);height:300px;position:absolute;left:50%;top:100px;
+display:none;
+z-index:2;
+margin-left:-177px;
+border-radius:12px;
+-moz-border-radius:12px;
+-ms-border-radius:12px;
+-o-border-radius:12px;
+-webkit-border-radius:12px;}
+.banner .banner_conts .downModal p {width:354px;height:300px;text-align:center;box-sizing:border-box;padding-top:23px;}
+.banner .banner_conts .close {display:block;z-index:10; width:38px;height:38px;overflow:hidden;position:absolute;right:34px;top:84px;z-index:5;display:none;}
+.banner .banner_conts .close img {display:block;width:38px;height:38px;}
+
+.detailConts {display:table; margin-bottom:138px;}
+.detailConts .left {width:705px;}
+.detailConts .right {width:450px;}
+.detailConts .leftText {box-sizing:border-box;padding-left:100px;padding-top:154px;}
+.detailConts .Text{line-height:42px;font-size:20px;color:#333;}
+.detailConts .bigSize {font-size:36px;height:35px;line-height:35px;}
+.detailConts .rightText {box-sizing:border-box;padding-top:98px;padding-right:62px;}
+.detailConts .detail_img {display:block;width:162px;height:23px;margin-top:8px;margin-bottom:42px;}
+.detailConts .smallSize {font-size:30px;}
+
+.partner {width:100%;background:#f6f6f6;box-sizing:border-box;padding:95px 0 86px;}
+.partner .partner_title {width:162px;margin:0 auto;text-align:center;font-size:30px;color:#333;height:23px;line-height:23px;position:relative;}
+.partner .partner_title .introduce_icon {display:block;height:28px;line-height:28px;position:absolute; left:20px;bottom:20px;}
+.partner ul {width:100%;display:table;margin-top:65px;}
+.partner li {width:178px;height:70px;margin:0 6px 12px 6px;float:left;}  
+.partner li:hover {box-shadow:0px 1px 5px 0px rgba(15, 11, 12, 0.1);
+-moz-box-shadow:0px 1px 5px 0px rgba(15, 11, 12, 0.1);
+-ms-box-shadow:0px 1px 5px 0px rgba(15, 11, 12, 0.1);
+-o-box-shadow:0px 1px 5px 0px rgba(15, 11, 12, 0.1);
+-webkit-box-shadow:0px 1px 5px 0px rgba(15, 11, 12, 0.1);}
+.footer {width:100%;box-sizing:border-box;padding:31px 0 15px;background:#fff;font-size:14px;color:#686868;line-height:36px;}
+.footer p.last {font-size:12px;color:#a0a0a0;}
+.footer p a {font-size:14px;color:#686868;}
+.footer p a:hover {color:#406599;} 
+.footer p em {display:inline-block;font-style:normal;padding:0 8px;}
+
+@media only screen and (min-width: 320px) and (max-width: 800px) 
+{
+  .w1160 {width:100%;}
+  .navigation {height:80px;line-height:80px;box-sizing:border-box;padding:0 15px;}
+  .navigation .Logo {margin-top:8px;}
+  .banner {height:auto;background-size:cover;margin-bottom:45px;}
+  .banner .banner_conts {width:88%;}
+  .banner_conts .promotion_banner {width:80%;}
+  .banner .down_btn .ios, .banner .down_btn .andrews {width:45%;height:40px;line-height:40px;font-size:16px;}
+  .banner .banner_conts .downModal {width:100%;margin-left:-50%;top:10px;}
+  .banner .banner_conts .downModal p {width:100%;height:200px;}
+  .banner .banner_conts .close {position:absolute;top:-10px;left:-10px;}
+  .banner .down_btn .promotion_icon {width:18px;}
+  .detailConts {margin-bottom:68px;}
+  .detailConts .left {width:100%;float:none;box-sizing:border-box;padding:0 10px;}
+  .detailConts .right {width:100%;float:none;box-sizing:border-box;padding:0 10px;margin-top:35px;}
+  .detailConts .left img,.detailConts .right img {display:block; width:100%;margin:0 auto;}
+  .detailConts .bigSize {font-size:22px;height:25px;line-height:25px;}
+  .detailConts .rightText {margin-top:35px;box-sizing:border-box;padding:0 25px 0 25px;}
+  .detailConts .leftText {box-sizing:border-box; padding:0 25px 0 25px;}
+  .detailConts .Text {font-size:16px;}
+  .detailConts .detail_img {width:140px;margin-bottom:12px;}
+  .detailConts .Text {line-height:26px;}
+  .partner {padding:70px 0 40px;}
+  .partner ul {margin-top:35px;box-sizing:border-box;padding:0 10px;}
+  .partner .partner_title {width:100%;}
+  .partner .partner_title .introduce_icon {position:static;text-align:center;margin-top:-50px;}
+  .partner li {width:48%;margin:0 1% 3% 1%;}
+  .partner li img {width:100%;}
+  .footer {box-sizing:border-box;padding: 15px 10px 15px;line-height:30px;}
+}
+
+

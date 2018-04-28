@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd23b41-091b-4f8f-98a1-51f0443dbab9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extend/.gitignore" afterPath="$PROJECT_DIR$/extend/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/share.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/common.php" afterPath="$PROJECT_DIR$/application/common.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/controller/Coupon.php" afterPath="$PROJECT_DIR$/application/index/controller/Coupon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/controller/Login.php" afterPath="$PROJECT_DIR$/application/index/controller/Login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/controller/Tool.php" afterPath="$PROJECT_DIR$/application/index/controller/Tool.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/route.php" afterPath="$PROJECT_DIR$/application/route.php" />
     </list>
     <ignored path="juedoutest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +28,18 @@
     <favorites_list name="juedoutest" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="sushe.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/static/index/js/sushe.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9034175">
+              <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,7 +61,6 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp32819/var/www/html/sushe/application/index/controller/Login.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp33874/var/www/html/sushe/application/jdroom/controller/Couponlist.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Tool.php" />
-        <option value="$PROJECT_DIR$/public/static/index/js/sushe.js" />
         <option value="$PROJECT_DIR$/application/index/controller/Login.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp24037/var/www/html/sushe/themes/admin/orderlist/detail.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp14835/var/www/html/sushe/themes/admin/orderlist/index.html" />
@@ -83,6 +97,7 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp27464/var/www/html/ssProject/application/index/controller/Coupon.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp55641/var/www/html/ssProject/application/index/controller/Login.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/public/static/index/js/sushe.js" />
       </list>
     </option>
   </component>
@@ -254,10 +269,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="834" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1616" height="834" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22300771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22300771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -431,13 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/index/js/sushe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/json.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34728682">
@@ -544,21 +552,21 @@
         <state vertical-scroll-proportion="4.214286">
           <caret line="447" column="9" selection-start-line="447" selection-start-column="9" selection-end-line="447" selection-end-column="9" />
           <folding>
-            <marker date="1524810368715" expanded="true" signature="3221:3256" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="3292:3330" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="4174:4212" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="8556:8591" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="8632:8685" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="8719:8740" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="8859:8877" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="8960:8998" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="9081:9119" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="9191:9229" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="9601:9639" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="9739:9777" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="9864:9902" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="9958:9996" placeholder="..." />
-            <marker date="1524810368715" expanded="true" signature="10070:10108" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="3209:3244" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="3280:3318" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="4162:4200" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="8544:8579" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="8620:8673" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="8707:8728" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="8847:8865" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="8948:8986" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="9069:9107" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="9179:9217" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="9589:9627" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="9727:9765" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="9852:9890" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="9946:9984" placeholder="..." />
+            <marker date="1524886960000" expanded="true" signature="10058:10096" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -575,6 +583,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/index/js/sushe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9034175">
+          <caret line="117" column="32" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
           <folding />
         </state>
       </provider>

@@ -56,4 +56,5 @@ Route::rule('/Writeletter/postMarkIdea','index/Writeletter/postMarkIdea');
 Route::rule('/Writeletter/writeAddress','index/Writeletter/writeAddress');
 Route::rule('/Writeletter/writeLetter','index/Writeletter/writeLetter');
 Route::rule('/Writeletter/getUserAllOrderList','index/Writeletter/getUserAllOrderList');
+Route::rule('/Coupon/recordShareDate','index/Coupon/recordShareDate');
 

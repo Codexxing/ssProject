@@ -74,18 +74,25 @@ class Login extends HomeBase{
      **/
     public function userRegister(){
         if(Request::instance()->isPost() ){
-//            Db::startTrans();
-//            try{
                 $data = $this->request->param();
                 $is_phone = getOneUserVal(['mobile'=>$data['mobile']],'mobile');
-//                if($is_phone){ jsonSend(0,'该手机号已经注册');exit;}
-                if($is_phone){echo json_encode(['code'=>0,'msg'=>'该手机号已经注册']);exit;}
-                 //首先看是不是存在邀请id invite_id
+                if($is_phone){ jsonSend(0,'该手机号已经注册');exit;}
+                 //首先看是不是存在邀请人的手机号 invite_phone
                 if(array_key_exists('invite_phone', $data)){
+                    //验证验证码
+                    $res = validateUser('code',$data['mobile'],$data['code']);
+                    switch($res){
+                        case 1:
+                            jsonSend(0,'验证码不正确');exit;
+                            break;
+                        case 2:
+                            jsonSend(0,'验证码已过期');exit;
+                            break;
+                    }
                     $data['password']=mt_rand();
                     $data['invite_id'] = getOneUserVal(['mobile'=>$data['invite_phone']],'id');
                 }else{
-                    $data['invite_id']=0;
+                    $data['invite_id']=0;//普通注册 邀请人默认为0
                 }
                     $time = date('Y-m-d H:i:s',time());
                     $token = setToken();
@@ -106,20 +113,20 @@ class Login extends HomeBase{
                    $res =  $this->userModel->userInsert($arr);
                     if($res > 0){
                         if(array_key_exists('invite_phone', $data)){//首先对邀请者赠送优惠券
-                             $data=[
+                             $Coupon=[
                                 'uid'=>$data['invite_id'],
                                 'money'=>config::get('coupon.invite_reg'), 
                                  'types'=>4
                              ];
-                             giveCoupon($data);
+                             giveCoupon($Coupon);
                         }
-                         $data=[
+                        $datareg=[
                                 'uid'=>$res,
                                 'money'=>config::get('reduce_money'), 
                                  'types'=>1
                              ]; //然后对注册者赠送优惠券
 
-                        $r =giveCoupon($data);
+                        $r =giveCoupon($datareg);
                         if($r){
                             jsonSend(1,'注册成功',['mobile'=>$arr['mobile'],'userId'=>$res,'token'=>$token]);exit;
                         }else{
@@ -284,9 +291,8 @@ class Login extends HomeBase{
                                 'is_conversion'=>1,
                                 'createtime'=>date('Y-m-d H:i:s',time()),
                                 'updatetime'=>date('Y-m-d H:i:s',time()),
-                                'overtime'=>date('Y-m-d H:i:s',strtotime("+1 year")),
+                                'overtime'=>'2099-12-31 '. date("H:i:s")
                             ]);
-
 //                            echo  Db::name('reduced')->getLastSql();
                         }
                     }

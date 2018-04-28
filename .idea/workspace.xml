@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0dd23b41-091b-4f8f-98a1-51f0443dbab9" name="Default" comment="" />
+    <list default="true" id="0dd23b41-091b-4f8f-98a1-51f0443dbab9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201804/23.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/log/201804/24.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
     <ignored path="juedoutest.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -62,7 +68,6 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp18855/var/www/html/sushe/application/config.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp18960/var/www/html/sushe/application/common.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp17898/var/www/html/sushe/application/index/controller/Tool.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp54068/etc/httpd/conf.d/test.juedouxin.com.conf" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp59500/etc/httpd/conf/httpd.conf" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp20323/var/www/html/ssProject/application/index/controller/Index.php" />
@@ -80,6 +85,7 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp42498/var/www/html/ssProject/application/common.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp27464/var/www/html/ssProject/application/index/controller/Coupon.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp55641/var/www/html/ssProject/application/index/controller/Login.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -140,20 +146,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -578,6 +570,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
           <folding />
         </state>
       </provider>

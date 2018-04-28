@@ -1,0 +1,51 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('jdroom/user/index')}">用户管理</a></li>
+            <!--<li class="layui-this">添加企业白名单</li>-->
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('jdroom/user/addWhiteCompany')}" method="post">
+                    <!--<input type="hidden" name="com_id" value="">-->
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">法人姓名</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="username" value="" placeholder="请输入法人姓名/没有不填" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">企业名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="com_name" value="" required lay-verify="required" placeholder="请输入企业名称" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">企业信誉/组织机构代码</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="com_cod" value="" required lay-verify="required" placeholder="企业信誉/组织机构代码" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">状态</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="status" value="1" title="启用" checked="checked">
+                            <input type="radio" name="status" value="0" title="禁用">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

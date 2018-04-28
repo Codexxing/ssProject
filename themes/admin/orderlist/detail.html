@@ -1,0 +1,472 @@
+{extend name="base" /}
+{block name="body"}
+<style>
+    .layui-input{border: none;}
+</style>
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('jdroom/orderlist/index')}">订单列表</a></li>
+            <li class="layui-this">订单详情</li>
+        </ul>
+        <div class="layui-tab-content">
+            <!--未支付状态下页面为只读-->
+            {if condition="$list.paystatus eq 0"}
+                <div style="width: 100%;background: transparent;z-index:9999;height: 1900px;position: absolute;"></div>
+                <div style="margin-left:500px;top: 45%;;position: fixed;font-size:48px;color:#ccc;z-index: 999999" id="noOperation">用户支付后可操作</div>
+            {elseif condition="$list.auid eq 0"}
+                <div style="width: 100%;background: transparent;z-index:9999;height: 1900px;position: absolute;"></div>
+                <div style="margin-left:500px;top: 45%;;position: fixed;font-size:48px;color:#ccc;z-index: 999999" >本人接单后可操作</div>
+            {elseif condition="$list.is_complete eq 2"}
+                <div style="width: 100%;background: transparent;z-index:9999;height: 800px;position: absolute;"></div>
+                <div style="margin-left:500px;top: 45%;;position: fixed;font-size:48px;color:#ccc;z-index: 999999" >订单已被取消</div>
+            {/if}
+            <input type="hidden" id="positionFlag" value="{$flag}">
+            <div class="layui-tab-item layui-show">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">订单号：</label>
+                            <div class="layui-input-inline">
+                                <input type="text"   placeholder="" value="{$order}" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">订单状态：</label>
+                            <div class="layui-input-inline">
+                                <input type="text"   placeholder=""  value="{$list.orderstatus}" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">创建时间：</label>
+                        <div class="layui-input-inline">
+                            <input type="text"  value="{$list.createtime}" autocomplete="off" class="layui-input">
+                        </div>
+                        <label class="layui-form-label">更新时间：</label>
+                        <div class="layui-input-inline">
+                            <input type="text"  value="{$list.updatetime}" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">接单人：</label>
+                        <div class="layui-input-inline">
+                            <input type="text" value="{$list.username}" autocomplete="off" class="layui-input">
+                        </div>
+                        <div class="layui-input-inline">
+                            {if condition="$list.iscancle eq 1"}
+                                <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;" onclick="cancleOrder(this,'{$order}',0)">取消订单</button>
+                            {elseif condition="$list.iscancle eq 0" /}
+                                <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;">取消订单</button>
+                            {elseif condition="$list.iscancle eq 2" /}
+                                <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;">已取消</button>
+                            {/if}
+
+                        </div>
+                    </div>
+                    <!--需求描述-->
+                    <div class="layui-collapse" lay-accordion="" style="border: none;" id="flag0">
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">
+                                <p style="height:1px;background:#dcdcdc;width:100%;clear: both;margin-top: 30px;"></p>
+                                <label class="layui-form-label layui-inline" style="cursor:pointer;line-height:25px;margin-top: -2px;background:#f1f1f1; text-align:center; margin-left: 20px;"><strong>需求描述</strong></label>
+                            </h2>
+                            {if condition="$list.layerIssue eq 0"}
+                                <div class="layui-colla-content layui-show">
+                            {else /}
+                                <div class="layui-colla-content">
+                            {/if}
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label layui-inline" style="width:80%;background:rgba(255, 255, 204, 1); text-align:center; margin-left: 20px;">
+                                        用户的需求简述资料会在订单完成后的24小时内删除，“诉舍”平台承诺保护用户和律师的隐私权益
+                                    </label>
+                                </div>
+                                <div class="layui-form-item layui-form-text">
+                                    <div class="layui-input-block" style="width:72%;">
+                                        {$list.content}
+                                    </div>
+                                </div>
+                                <div class="layui-upload" style="margin-left: 90px;">
+                                    <button type="button" name="image" class="layui-btn" id="touxiangimg" style="background-color: transparent;;"></button>
+                                    <div class="layui-upload-list">
+                                        {foreach $files.url as $k=>$v}
+                                            {notempty name="v"}
+                                                <img src="{$v}" class="layui-upload-img" style="cursor:pointer;width: 115px;height: 60px;float: left;margin-top: -55px; margin-left: 20px;" onclick="ShowBigimg(this,1)">
+                                            {/notempty}
+                                        {/foreach}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--补充需求-->
+                    {notempty name="is_replenish"}
+                        <div class="layui-collapse" lay-accordion="" style="border: none;">
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title">
+                                <p style="height:1px;background:#dcdcdc;width:100%;clear: both;margin-top: 30px;"></p>
+                                <label class="layui-form-label layui-inline" style="cursor:pointer;line-height:25px;margin-top: -2px;background:#f1f1f1; text-align:center; margin-left: 20px;"><strong>补充需求</strong></label>
+                            </h2>
+                                {if condition="$list.layerIssue eq 0"}
+                                    <div class="layui-colla-content layui-show">
+                                 {else /}
+                                    <div class="layui-colla-content">
+                                {/if}
+                                <div class="layui-form-item layui-form-text">
+                                    补充需求：
+                                    <div class="layui-input-block" style="width:72%;">
+                                        {$list.replenish_content}
+                                    </div>
+                                </div>
+                                <div class="layui-upload" style="margin-left: 90px;">
+                                    <button type="button" name="image" class="layui-btn" id="" style="background-color: transparent;"></button>
+                                    <div class="layui-upload-list">
+                                        {notempty name="replenishfiles.url"}
+                                            {foreach $replenishfiles.url as $k=>$v}
+                                                {notempty name="v"}
+                                                    <img src="{$v}" class="layui-upload-img"  style="cursor:pointer;width: 115px;height: 60px;float: left;margin-top: -55px; margin-left: 20px;" onclick="ShowBigimg(this,1)">
+                                                {/notempty}
+                                            {/foreach}
+                                        {/notempty}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/notempty}
+
+                <!--收函对象-->
+                <div class="layui-collapse" lay-accordion="" style="border: none;" id="flag1">
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title">
+                            <p style="height:1px;background:#dcdcdc;width:100%;clear: both;margin-top: 30px;"></p>
+                            <label class="layui-form-label layui-inline" style="cursor:pointer;line-height:25px;margin-top: -2px;background:#f1f1f1; text-align:center; margin-left: 20px;"><strong>收函对象</strong></label>
+                        </h2>
+                        {if condition="$list.layerIssue eq 0"}
+                            <div class="layui-colla-content layui-show">
+                         {else /}
+                            <div class="layui-colla-content ">
+                         {/if}
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">收函对象：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text"  value="{$address.accept_name}" autocomplete="off" class="layui-input">
+                                </div>
+                                <label class="layui-form-label">收函地址：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" value="{$address.accept_address}" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">收函电话：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text"   value="{$address.accept_phone}" autocomplete="off" class="layui-input">
+                                </div>
+                                <label class="layui-form-label">电子邮件：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text"  value="{$address.accept_email}" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--发函对象-->
+                <div class="layui-collapse" lay-accordion="" style="border: none;">
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title">
+                            <p style="height:1px;background:#dcdcdc;width:100%;clear: both;margin-top: 60px;"></p>
+                            <label class="layui-form-label layui-inline" style="cursor:pointer;line-height:25px;background:#f1f1f1; text-align:center; margin-left: 20px;"><strong>发函对象</strong></label>
+                        </h2>
+                        {if condition="$list.layerIssue eq 0"}
+                            <div class="layui-colla-content  layui-show">
+                         {else /}
+                            <div class="layui-colla-content">
+                         {/if}
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">发函对象：</label>
+                                <div class="layui-input-inline" >
+                                    <input type="text"  value="{$address.send_name}" autocomplete="off" class="layui-input" >
+                                </div>
+                                <label class="layui-form-label">发函地址：</label>
+                                <div class="layui-input-inline" style="    width: 50%;">
+                                    <input type="text" value="{$address.send_address}" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">发函电话：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text"  value="{$address.send_phone}" autocomplete="off" class="layui-input">
+                                </div>
+                                <label class="layui-form-label">电子邮件：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text"  value="{$address.send_email}" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            {if condition="$list.send_type eq 1"}
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label" style="width: 112px;">公司信誉代码：</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text"  value="{$address.companyCode}" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                            企业信息展示：
+                                <div class="layui-upload" style="margin-left: 90px;">
+                                <button type="button" name="image" class="layui-btn" style="background-color: transparent;;"></button>
+                                <div class="layui-upload-list">
+                                    {foreach $company.url as $k=>$vc}
+                                        {notempty name="vc"}
+                                            <img src="{$vc}" class="layui-upload-img" style="cursor:pointer;width: 115px;height: 60px;float: left;margin-top: -55px; margin-left: 20px;" onclick="ShowBigimg(this,1)">
+                                        {/notempty}
+                                    {/foreach}
+                                </div>
+                            </div>
+                            {/if}
+                            <div class="layui-form-item layui-form-text" style="margin-top: 40px;width: 80%;">
+                                <div class="layui-input-block">
+                                    <textarea placeholder="填写对资料的意见" class="layui-textarea" id="fileIssue" style="max-height: 150px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="layui-form-item" style="margin-left: 60px;">
+                                <div class="layui-input-inline">
+                                    {if condition="$list.layerIssue eq 3"}
+                                        <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;background: rgba(102, 204, 0, 1);color: white;"  onclick="fileVerify(this,'{$order}',0,'{$list.uid}');">资料有误</button>
+                                    {else /}
+                                        <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;background: rgba(102, 204, 0, 1);color: white;" >资料有误</button>
+                                    {/if}
+                                </div>
+                                <div class="layui-input-inline">
+                                    {if condition="$list.layerIssue eq 3"}
+                                        <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;border-color: rgba(102, 204, 0, 1); " onclick="fileVerify(this,'{$order}',1,'{$list.uid}');">资料确认</button>
+                                    {else /}
+                                        <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;border-color: rgba(102, 204, 0, 1); " >资料确认</button>
+                                    {/if}
+                                </div>
+                                {notempty name="is_replenish"}
+                                    <button class="layui-btn layui-btn-radius" style="float: right;border-color: rgba(102, 204, 0, 1); " >查看互动</button>
+                                {/notempty}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--提交律师函-->
+                <div class="layui-collapse" lay-accordion="" style="border: none;" id="flag2">
+                    <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">
+                        <p style="height:1px;background:#dcdcdc;width:100%;clear: both;margin-top: 60px;"></p>
+                        <label class="layui-form-label layui-inline" style="cursor:pointer;line-height:25px;margin-top: -2px;background:#f1f1f1; text-align:center; margin-left: 20px;"><strong>提交律师函</strong></label>
+                    </h2>
+
+                    {if condition="($list.layerIssue eq 1) "}
+                        <div class="layui-colla-content layui-show">
+                    {else /}
+                        <div class="layui-colla-content">
+                    {/if}
+                        <div class="layui-upload" style="margin-left: 0px;">
+                            <button type="button" name="image" class="layui-btn" style="background-color: transparent;;"></button>
+                            <div class="layui-upload-list" id="fileShow0">
+                                {notempty name="layerFile"}
+                                    {foreach $layerFile[0]['pdf'] as $k=>$v}
+                                        <a href="{$v}" target="_blank" title="{$layerFile[0]['filename']}"><img src="/static/images/pdf.png" class="layui-upload-img" style="cursor:pointer;height: 60px;float: left;margin-top: -55px; margin-left: 20px;" ></a>
+                                    {/foreach}
+                                {/notempty}
+                            </div>
+                        </div>
+                        {if condition="$changeContent.count egt 1"}
+                            <div class="layui-form-item">
+                                <p style="height:1px;background:#dcdcdc;width:100%;clear: both;margin-top: 60px;"></p>
+                                <label class="layui-form-label layui-inline" style="line-height:25px;margin-top: -25px;background:#f1f1f1; text-align:center; margin-left: 20px;width: 145px;"><strong>第1次律师函修改要求</strong></label>
+                            </div>
+                            <div class="layui-form-item layui-form-text">
+                                <div class="layui-input-block" style="width:72%;margin-left: 10px;">
+                                    {if condition='$changeContent.count eq 1'}
+                                        {$changeContent[0]['content']}
+                                    {/if}
+                                </div>
+                            </div>
+                            <div class="layui-input-block" style="margin-left: 10px;" id="fileShow1">
+                                {notempty name="layerFile"}
+                                    {egt name="layerFile.count" value="2"}
+                                        {foreach $layerFile[1]['pdf'] as $k=>$v}
+                                            <img src="/static/images/pdf.png" class="layui-upload-img"  title="{$layerFile[1]['filename']}" style="cursor:pointer;width: 115px;height: 60px;margin-bottom: 30px;" >
+                                        {/foreach}
+                                    {/egt}
+                                {/notempty}
+                             </div>
+                        {/if}
+                        {if condition="$changeContent.count eq 2"}
+                            <div class="layui-form-item">
+                                <p style="height:1px;background:#dcdcdc;width:100%;clear: both;margin-top: 60px;"></p>
+                                <label class="layui-form-label layui-inline" style="line-height:25px;margin-top: -25px;background:#f1f1f1; text-align:center; margin-left: 20px;width: 145px;"><strong>第2次律师函修改要求</strong></label>
+                            </div>
+                            <div class="layui-form-item layui-form-text">
+                                <div class="layui-input-block" style="width:72%;margin-left: 10px;">
+                                    {if condition='$changeContent.count eq 2'}
+                                        {gt name="changeContent.count" value="1"}
+                                            {$changeContent[1]['content']}
+                                        {/gt}
+                                    {/if}
+                                </div>
+                            </div>
+                            <div class="layui-input-block" style="margin-left: 10px;" id="fileShow2">
+                                {notempty name="layerFile "}
+                                    {egt name="layerFile.count" value="3"}
+                                        {foreach $layerFile[2]['pdf'] as $k=>$v}
+                                            <img src="/static/images/pdf.png"  title="{$layerFile[2]['filename']}" class="layui-upload-img" style="cursor:pointer;width: 115px;height: 60px;margin-bottom: 30px;">
+                                        {/foreach}
+                                    {/egt}
+                                {/notempty}
+                            </div>
+                        {/if}
+
+                        <div class="layui-upload" style="    margin-top: 25px;">
+                            {if condition="$list.uploadBtn eq 1"}
+                                <button type="button" class="layui-btn layui-btn-normal" id="testList">选择文件</button>
+                            {elseif condition="$list.uploadBtn eq 0" /}
+                                <button type="button" class="layui-btn layui-btn-normal layui-btn-disabled">选择文件</button>
+                            {/if}
+                            <div class="layui-upload-list">
+                                <table class="layui-table">
+                                    <thead>
+                                    <tr><th>文件名</th>
+                                        <th>大小</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr></thead>
+                                    <tbody id="demoList"></tbody>
+                                </table>
+                            </div>
+                            {if condition="$list.uploadBtn eq 1"}
+                                <button type="button" attr_uid ='{$list.uid}' class="layui-btn" id="testListAction">开始上传</button>
+                            {elseif condition="$list.uploadBtn eq 0" /}
+                                <button type="button" class="layui-btn layui-btn-disabled">开始上传</button>
+                            {/if}
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+
+                    <!--用户授权资料-->
+                <div class="layui-collapse" lay-accordion="" style="border: none;" id="flag3">
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title">
+                            <p style="height:1px;background:#dcdcdc;width:100%;clear: both;margin-top: 60px;"></p>
+                            <label class="layui-form-label layui-inline" style="cursor:pointer;line-height:25px;margin-top: -2px;background:#f1f1f1; text-align:center; margin-left: 20px;    width: 85px;"><strong>用户授权资料</strong></label>
+                        </h2>
+                        {notempty name="hash"}
+                            <div class="layui-colla-content layui_show">
+                        {else /}
+                            <div class="layui-colla-content">
+                        {/notempty}
+                                {notempty name="list.shouquanUrl"}
+                            <div class="layui-upload" style="margin-left: 90px;">
+                                <button type="button" name="image" class="layui-btn" style="background-color: transparent;;"></button>
+                                <div class="layui-upload-list">
+                                    {notempty name="list.shouquanUrl"}
+                                        <a href="/jdroom/orderlist/downLoadPdf?url={$list.shouquanUrl}" title="点击下载授权书"><img src="/static/images/pdf.png" class="layui-upload-img" style="cursor:pointer;width: 115px;height: 60px;float: left;margin-top: -55px; margin-left: 20px;"></a>
+                                    {/notempty}
+                                    <input  name="img" type="hidden" value="">
+                                </div>
+                            </div>
+                                {/notempty}
+                            <div class="layui-form-item">
+                                <label class="layui-form-label" style="width: 122px;    margin-top: 40px;">授权书签署标识：</label>
+                                <div class="layui-input-inline" style="    margin-top: 40px;">
+                                    <input type="text"  placeholder="" value="{$list.signServiceId}" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!--填写快递单号-->
+                <div class="layui-collapse" lay-accordion="" style="border: none;" id="flag4">
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title">
+                            <p style="height:1px;background:#dcdcdc;width:100%;clear: both;margin-top: 60px;"></p>
+                            <label class="layui-form-label layui-inline" style="cursor:pointer;line-height:25px;margin-top: -2px;background:#f1f1f1; text-align:center; margin-left: 20px;    width: 85px;"><strong>填写快递单号</strong></label>
+                        </h2>
+                        {notempty name="list.express_number"}
+                            <div class="layui-colla-content">
+                        {else /}
+                            <div class="layui-colla-content layui_show">
+                         {/notempty}
+                            <div class="layui-form-item">
+                                <label class="layui-form-label"></label>
+                                <div class="layui-input-inline">
+                                    <input type="text" id="order_number_express"  placeholder="请填写快递单号" value="{$list.express_number}" autocomplete="off" class="layui-input express_number_input" style="border: 1px solid #ccc;">
+                                </div>
+                                <div class="layui-input-inline">
+                                    {notempty name="list.signServiceId"}
+                                        <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right" onclick="confirmOrderNumber(this,'{$order}',1,'{$list.uid}')">确认快递单号</button>
+                                    {else /}
+                                        <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right" >确认快递单号</button>
+                                    {/notempty}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!--结束-->
+                    <div class="layui-form-item"><p style="height:1px;background:#dcdcdc;width:100%;clear: both;margin-top: 60px;"></p></div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            {if condition="$list.iscancle eq 1"}
+                                <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;" onclick="cancleOrder(this,'{$order}',0)">取消订单</button>
+                            {elseif condition="$list.iscancle eq 0" /}
+                                <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;">取消订单</button>
+                            {elseif condition="$list.iscancle eq 2" /}
+                                <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;">已取消</button>
+                            {/if}
+                        </div>
+                    </div>
+                <!--</form>-->
+            </div>
+        </div>
+    </div>
+</div>
+                    <div style="width: 100%;background: #f1f1f1;z-index:9999"></div>
+{/block}
+{block name="js"}
+<script>
+    layui.use(['element', 'layer'], function(){
+        var element = layui.element;
+        var layer = layui.layer;
+
+        //监听折叠
+        element.on('collapse(test)', function(data){
+            layer.msg('展开状态：'+ data.show);
+        });
+    });
+    $('.layui-input').attr('readonly','readonly');
+    $('.express_number_input').attr('readonly',false);
+
+    //图片放大
+    function ShowBigimg(obj,sta){
+        var url = $(obj).attr("src");
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            shadeClose: true,
+//            area: ['800px', '700px'], //宽高
+            area: '800px', //宽高
+            content: "<img  src=" + url + " />"
+        });
+    }
+    //定位到某位置
+
+    var flag = $('#positionFlag').val();
+//    alert(flag);
+    window.location.hash='#flag'+flag;
+    if('{$list.paystatus}'==0 || '{$list.is_complete}'==1|| '{$list.is_complete}'==2){
+        $('.layui-colla-content').addClass(' layui-show');
+    }
+//    $('.scroll_top').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+//  $('html,body').animate({scrollTop:$('#flag'+flag).offset().top}, 800);};
+//    $('.scroll_bottom').click(function(){$('html,body').animate({scrollTop:$('.bottom').offset().top}, 800);});
+</script>
+{/block}

@@ -1,0 +1,51 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">消息列表</li>
+            <li onclick="sendMessages()">消息发送</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form layui-form-pane layui-inline" action="{:url('jdroom/Message/index')}" method="get">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">关键词</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="keyword" value="{$keyword}" placeholder="请输入管理员姓名" class="layui-input" required>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn  layui-btn-primary">搜索</button>
+                    </div>
+                </form>
+                <table class="layui-table">
+                    <thead>
+                    <tr>
+                        <th style="width: 30px;">ID</th>
+                        <th>发送人</th>
+                        <th>用户</th>
+                        <th>消息内容</th>
+                        <th>创建时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="res" item="vo"}
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.admin_name}</td>
+                        <td>{$vo.uname}</td>
+                        <td><a style="cursor: pointer;color: rgb(51,204,255)" onclick="lookMessage('{$vo.id}')">查看消息内容</a></td>
+                        <td>{$vo.createtime}</td>
+                        <td>{$vo.createtime}</td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+            </div>
+            {$res->render();}
+        </div>
+    </div>
+</div>
+{/block}

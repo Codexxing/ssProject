@@ -1,0 +1,87 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">用户管理</li>
+            <li class=""><a href="{:url('jdroom/user/add')}">添加企业白名单</a></li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-inline" style="margin-bottom: 8px;">
+                <a href="{:url('jdroom/user/index',array('status'=>'3'))}" class="layui-btn layui-btn-sm {if condition='$status  eq  3'} layui-btn-normal  {else /} layui-btn-primary {/if}">全部用户<span class="layui-badge layui-bg-gray">{$count[0]}</span></a>
+                <a href="{:url('jdroom/user/index',array('status'=>'0'))}" class="layui-btn layui-btn-sm  {if condition='$status  eq  0'} layui-btn-normal  {else /} layui-btn-primary {/if}">个人用户<span class="layui-badge layui-bg-gray">{$count[1]}</span></a>
+                <a href="{:url('jdroom/user/index',array('status'=>'1'))}" class="layui-btn layui-btn-sm {if condition='$status  eq  1'} layui-btn-normal  {else /} layui-btn-primary {/if}">企业用户<span class="layui-badge layui-bg-gray">{$count[2]}</span></a>
+            </div>
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form layui-form-pane" action="{:url('jdroom/user/index')}" method="get">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">关键词</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="keyword" value="{$keyword}" placeholder="请输入手机号" class="layui-input" required>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn">搜索</button>
+                    </div>
+                </form>
+                <hr>
+
+                <table class="layui-table">
+                    <thead>
+                    <tr>
+                        <th style="width: 30px;">ID</th>
+                         <th>认证信息</th>
+                        <th>手机</th>
+                        <th>状态</th>
+                        <th>用户类型</th>
+                        <th>创建时间</th>
+                        <th>最后登录时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="user_list" item="vo"}
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>
+                            {if condition="$vo.userauth eq 1"}
+                                <span style="cursor: pointer;" onclick="showCompanyInfo('{$vo.id}','{$vo.usertype}')">点击查看认证信息</span>
+                            {else /}
+                                未认证
+                            {/if}
+                        </td>
+                        <td>{$vo.mobile}</td>
+                        <td>
+                            <form class="layui-form" action="">
+                                <div class="layui-form-item" style="margin-left: -100px; margin-bottom: 0px; ">
+                                    <div class="layui-input-block" style="min-height: 31px;">
+                                        {if condition="$vo.status eq 1 "}
+                                        <input type="checkbox" checked="checked" title="启用"  data_id="{$vo.id}" name="is_show" lay-skin="switch" lay-filter="switchTestTrue" lay-text="ON|OFF">
+                                        {else /}
+                                        <input type="checkbox"  name="status" title="禁用"  data_id="{$vo.id}" lay-skin="switch" lay-filter="switchTestFalse" lay-text="ON|OFF">
+                                        {/if}
+
+                                    </div>
+                                </div>
+                            </form>
+                        </td>
+                        <td>{php}echo $vo['usertype']==0 ? '个人用户' : '企业用户';{/php}</td>
+                        <td>{$vo.create_time}</td>
+                        <td>{$vo.last_login_time}</td>
+                        <td>
+                            <!--<a href="{:url('jdroom/user/edit',['id'=>$vo['id']])}" title="编辑"><i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#xe642;</i></a>-->
+                            <!--<a href="{:url('jdroom/user/delete',['id'=>$vo['id']])}" title="删除" class="ajax-delete"><i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#xe640;</i></a>-->
+                            <a style="cursor: pointer;" title="赠送优惠券" onclick="sendCoupon('{$vo["id"]}')"><i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#xe609;</i></a>
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页-->
+                {$user_list->render()}
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

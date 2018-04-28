@@ -1,0 +1,39 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">黑名单</li>
+            <!--<li class=""><a href="{:url('jdroom/blacklist/add')}">添加分类</a></li>-->
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form login-form" action="{:url('jdroom/blacklist/save')}" method="post">
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">黑名单</label>
+                        <div class="layui-input-block">
+                            <textarea placeholder="请输入内容" class="layui-textarea" style="height: 200px;width: 1000px;" name="content">{$blacklist.content}</textarea>
+                        </div>
+                    </div>
+                    <span style="margin-left: 110px;color: red;">注：黑名单词请用竖线 | 隔开填写</span><br>
+                    <div class="layui-form-item" style="margin-top: 25px;">
+                        <div class="layui-input-block">
+                            <button class="layui-btn btn btn-success btn-block" lay-submit lay-filter="*">保存</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+{/block}
+{block name="js"}
+<script>
+var aa=$('#demo1').attr('src');
+//    $.post('/Writeletter/writeLetter',{content:111,uid:1,send_type:1,file:{img:aa,img2:aa}},function(res){
+//        console.log(res);
+//    },'json')
+</script>
+{/block}

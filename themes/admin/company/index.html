@@ -1,0 +1,59 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">快递列表</li>
+            <li class=""><a href="{:url('jdroom/company/add')}">添加快递公司</a></li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+
+                <form class="layui-form layui-form-pane" action="{:url('jdroom/company/index')}" method="get">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">关键词</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="keyword" value="{$keyword}" placeholder="请输入关键词"  required class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn">搜索</button>
+                    </div>
+                </form>
+                <hr>
+
+                <table class="layui-table">
+                    <thead>
+                    <tr>
+                        <th style="width: 30px;">ID</th>
+                        <th>中文</th>
+                        <th>快递代码</th>
+                        <th>创建时间</th>
+                        <th>更新时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="res" item="vo"}
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.company_name}</td>
+                        <td>{$vo.company_letter}</td>
+                        <td>{$vo.createtime}</td>
+                        <td>{$vo.updatetime}</td>
+                        <td>
+                            <!--<a href="{:url('jdroom/company/edit',['id'=>$vo['id']])}" title="编辑"><i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#xe642;</i></a>-->
+                            <a href="{:url('jdroom/company/delete',['id'=>$vo['id']])}" class=" ajax-delete"><i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#xe640;</i></a>
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <!--分页-->
+                {$res->render()}
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

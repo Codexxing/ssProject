@@ -1,0 +1,80 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">优惠券列表</li>
+            <li class=""><a href="{:url('jdroom/couponlist/add')}">生成优惠券</a></li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form layui-form-pane layui-inline" action="{:url('jdroom/Couponlist/index')}" method="get">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">关键词</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="keyword" value="{$keyword}" placeholder="请输入兑换码" required class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn  layui-btn-primary">搜索</button>
+                    </div>
+                </form>
+                <a href="/jdroom/Couponlist/downloadOrder" target="_blank" title="下载未兑换的优惠码"><i class="layui-icon" style="font-size: 30px;margin-left: 32px; color: #1E9FFF;cursor: pointer;">&#xe601;</i></a>
+                <table class="layui-table">
+                    <thead>
+                    <tr>
+                        <th style="width: 30px;">ID</th>
+                        <th>优惠券码</th>
+                        <th>钱数</th>
+                        <th>是否兑换</th>
+                        <th>是否使用</th>
+                        <th>获得方式</th>
+                        <th>创建时间</th>
+                        <th>更新时间</th>
+                        <th>过期时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="list" item="vo"}
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.reduce_number}</td>
+                        <td>{$vo.money}</td>
+                        <td>{php}echo $vo['is_conversion']==1 ? '已兑换' : '未兑换';{/php}</td>
+                        <td>{php}echo $vo['is_use']==1 ? '已使用' : '未使用';{/php}</td>
+                        <td>{if condition="$vo['types'] eq 1"}
+                            注册
+                            {elseif condition="$vo['types'] eq 2"}
+                            活动
+                            {elseif condition="$vo['types'] eq 3"}
+                            系统发放
+                            {/if}
+                        </td>
+                        <td>{$vo.createtime}</td>
+                        <td>{$vo.updatetime}</td>
+                        <td>{$vo.overtime}</td>
+                        <td>
+                            {if condition="$vo.btn eq 1"}
+
+                                <!--<button class="layui-btn layui-btn-normal layui-btn-sm" title="兑换" onclick="couponChange(this,'{$vo.id}');"><i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#x1005;</i></button>-->
+                                <i class="layui-icon" style="font-size: 30px; color: #1E9FFF;cursor: pointer;" title="兑换" onclick="couponChange(this,'{$vo.id}');">&#x1005;</i>
+                            {else /}
+                                <!--<button class="layui-btn layui-btn-disabled layui-btn-sm"><i class="layui-icon">&#x1005;</i></button>-->
+                                <i class="layui-icon layui-btn-disabled" style="font-size: 30px; color: #ccc;">&#x1005;</i>
+                            {/if}
+                            <a href="{:url('jdroom/couponlist/delete',['id'=>$vo['id']])}" class="ajax-delete" title="删除">
+                                <i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#xe640;</i>
+                            </a>
+                        </td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+            </div>
+            {$res->render();}
+        </div>
+    </div>
+</div>
+{/block}

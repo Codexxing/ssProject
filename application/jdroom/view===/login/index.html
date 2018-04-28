@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>爵斗后台登录</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="__LOGINCSS__/bootstrap.min.css" rel="stylesheet">
+    <link href="__LOGINCSS__/style.min.css" rel="stylesheet">
+    <link href="__LOGINCSS__/login.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+
+    <style>
+        /*.login .login-form input {color: #000;}*/
+    </style>
+    <![endif]-->
+    <script>
+        if(window.top!==window.self){window.top.location=window.location};
+    </script>
+
+</head>
+
+<body class="signin">
+<div class="signinpanel">
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="signin-info">
+                <div class="logopanel m-b">
+                </div>
+                <div class="m-b"></div>
+                <h4>欢迎使用 <strong>爵斗</strong></h4>
+                <ul class="m-b"> </ul>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <form class="layui-form login-form" action="{:url('jdroom/login/login')}" method="post">
+                <p class="m-t-md" id="err_msg">登录到爵斗后台</p>
+                <input type="text" name="username" class="form-control uname" placeholder="用户名" id="username" lay-verify="required"/>
+                <input type="password" name="password" class="form-control pword m-b" placeholder="密码" id="password" lay-verify="required"/>
+                <div style="margin-bottom:70px">
+                    <input type="text" class="form-control" placeholder="验证码" maxlength="4" style="color:black;width:120px;float:left;margin:0px 0px;" name="verify" id="code" required lay-verify="required"/>
+                    <img src="{:captcha_src()}" alt="点击更换" title="点击更换" onclick="this.src='{:captcha_src()}?time='+Math.random()" style="float:right;cursor: pointer" class="captcha">
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn btn btn-success btn-block" id="" lay-submit lay-filter="*">登 录</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="signup-footer">
+        <div class="pull-left">
+            &copy; 爵斗
+        </div>
+    </div>
+</div>
+<script src="__LOGINJS__/jquery.min.js?v=2.1.4"></script>
+<script>
+    // 定义全局JS变量
+    var GV = {
+        current_controller: "admin/{$controller|default=''}/"
+    };
+</script>
+<script src="__JS__/jquery.min.js"></script>
+<script src="__JS__/layui/layui.all.js"></script>
+<script src="__JS__/admin.js"></script>
+<script src="__JS__/html5shiv.min.js"></script>
+<script src="__JS__/respond.min.js"></script>
+
+</body>
+</html>

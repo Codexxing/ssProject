@@ -1,0 +1,29 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">法律条款同意政策</li>
+            <!--<li class=""><a href="{:url('jdroom/blacklist/add')}">添加分类</a></li>-->
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form login-form" action="{:url('jdroom/Policyclause/save')}" method="post">
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">内容</label>
+                        <div class="layui-input-block">
+                            <textarea placeholder="请输入内容" class="layui-textarea" style="height: 200px;width: 1000px;" name="content">{$blacklist.content}</textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item" style="margin-top: 25px;">
+                        <div class="layui-input-block">
+                            <button class="layui-btn btn btn-success btn-block" lay-submit lay-filter="*">保存</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

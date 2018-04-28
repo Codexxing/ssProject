@@ -1,0 +1,69 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>诉舍后台系统</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="__JS__/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="__CSS__/font-awesome.min.css">
+    <!--CSS引用-->
+    {block name="css"}{/block}
+    <link rel="stylesheet" href="__CSS__/admin.css">
+    <!--[if lt IE 9]>
+    <script src="__CSS__/html5shiv.min.js"></script>
+    <script src="__CSS__/respond.min.js"></script>
+    <![endif]-->
+</head>
+{block name="body"}
+<div class="layui-body" style="    margin-left: -120px;">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">消息发送</li>
+        </ul>
+        <div class="layui-tab-content" style="    margin-left: -41px;">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('jdroom/message/sendMessage')}" method="post">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">搜索</label>
+                        <div class="layui-inline">
+                            <input type="text" id="searchPhone" value="" placeholder="请输入手机号" autocomplete="off" class="layui-input">
+                        </div>
+                        <div class="layui-inline">
+                            <p class="layui-btn layui-btn-primary" onclick="findphone();">搜索</p>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">消息内容</label>
+                        <div class="layui-input-block">
+                            <textarea name="content" placeholder="请输入消息内容" class="layui-textarea" style="width: 500px;max-height: 200px;"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block" id="showPhone" >
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="*">提交</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}
+<script>
+    // 定义全局JS变量
+    var GV = {
+        current_controller: "jdroom/{$controller|default=''}/",
+        base_url: "__STATIC__"
+    };
+</script>
+<!--JS引用-->
+<script src="__JS__/jquery.min.js"></script>
+<!--<script src="__JS__/layui/lay/dest/layui.all.js"></script>-->
+<script src="__JS__/layui/layui.all.js"></script>
+<script src="__JS__/admin.js"></script>

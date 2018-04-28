@@ -1,0 +1,142 @@
+{extend name="base" /}
+{block name="body"}
+<style>
+    .orderlistFont{font-family: 'ArialMT', 'Arial';font-size: 14px;color: #686868;}
+    .tixingfont{color: rgb(51,204,255)}
+    </style>
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">订单列表</li>
+            <!--<li class=""><a href="{:url('admin/user/add')}">添加用户</a></li>-->
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-inline" style="margin-bottom: 8px;">
+                <a href="{:url('jdroom/orderlist/index',array('paystatus'=>'1'))}" class="layui-btn layui-btn-sm {if condition='$paystatus  eq  1'} layui-btn-normal  {else /} layui-btn-primary {/if}">已支付<span class="layui-badge ">{$num.payComplete}</span></a>
+                <a href="{:url('jdroom/orderlist/index',array('paystatus'=>'2'))}" class="layui-btn layui-btn-sm  {if condition='$paystatus  eq  2'} layui-btn-normal  {else /} layui-btn-primary {/if}">未完成<span class="layui-badge layui-bg-gray">{$num.nocomplete}</span></a>
+                <a href="{:url('jdroom/orderlist/index',array('paystatus'=>'3'))}" class="layui-btn layui-btn-sm {if condition='$paystatus  eq  3'} layui-btn-normal  {else /} layui-btn-primary {/if}">未支付<span class="layui-badge layui-bg-gray">{$num.payNoComplete}</span></a>
+                <a href="{:url('jdroom/orderlist/index',array('paystatus'=>'4'))}" class="layui-btn layui-btn-sm {if condition='$paystatus  eq  4'} layui-btn-normal  {else /} layui-btn-primary {/if}">已取消<span class="layui-badge layui-bg-gray">{$num.payCancle}</span></a>
+                <a href="{:url('jdroom/orderlist/index',array('paystatus'=>'5'))}" class="layui-btn layui-btn-sm {if condition='$paystatus  eq  5'} layui-btn-normal  {else /} layui-btn-primary {/if}">已完成<span class="layui-badge layui-bg-gray">{$num.complete}</span></a>
+                <a href="{:url('jdroom/orderlist/index',array('paystatus'=>'0'))}" class="layui-btn layui-btn-sm {if condition='$paystatus  eq  0'} layui-btn-normal  {else /} layui-btn-primary {/if}">全部订单<span class="layui-badge layui-bg-gray">{$num.all}</span></a>
+
+            </div>
+            <div class="layui-tab-item layui-show">
+
+                <form class="layui-form layui-form-pane layui-inline" action="{:url('jdroom/orderlist/index')}" method="get">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">关键词</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="keyword" value="{$keyword}" placeholder="请输入订单号或用户姓名" class="layui-input">
+                            <input type="hidden" name="paystatus" value="{$paystatus}" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn  layui-btn-primary">搜索</button>
+                    </div>
+                </form>
+                {if condition='1 eq 2'}
+                <ul class="layui-inline" style="margin-left: 50px;">
+                    <a href="/jdroom/orderlist/index?time=1&paystatus={$paystatus}">
+                        <li class="layui-inline">
+                            <button class="layui-btn  layui-btn-sm layui-btn-normal ">今天</button>
+                        </li>
+                    </a>
+                    <a href="/jdroom/orderlist/index?time=-1&paystatus={$paystatus}">
+                        <li class="layui-inline">
+                            <button class="layui-btn layui-btn-primary layui-btn-sm">昨天</button>
+                        </li>
+                    </a>
+                    <a href="/jdroom/orderlist/index?time=7&paystatus={$paystatus}">
+                        <li class="layui-inline">
+                            <button class="layui-btn layui-btn-primary layui-btn-sm">7天</button>
+                        </li>
+                    </a>
+                    <a href="/jdroom/orderlist/index?time=30&paystatus={$paystatus}">
+                        <li class="layui-inline">
+                            <button class="layui-btn layui-btn-primary layui-btn-sm">30天</button>
+                        </li>
+                    </a>
+                </ul>
+                <form class="layui-form layui-input-inline" action="/jdroom/orderlist/index" style="    margin-top: 10px;">
+                    <div class="layui-form layui-inline" >
+                        <div class="layui-form-item">
+                                <label class="layui-form-label">时间</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" value="" name="startTime" lay-id="orderlist_start" placeholder="开始时间">
+                                </div>
+                                <div class="layui-input-inline" style="width:12px;margin-top: 10px">到</div>
+
+                                <div class="layui-input-inline">
+                                    <input type="text" class="layui-input" value="" name="endTime" id="orderlist_end" placeholder="结束时间">
+                                </div>
+                            <div class="layui-input-inline" style="margin-top: 5px;">
+                                    <button class="layui-btn layui-btn-sm layui-btn-primary" lay-submit lay-filter="formDemo">提交</button>
+                                </div>
+                        </div>
+                    </div>
+                </form>
+                {/if}
+                <hr>
+                    {foreach $list[0]['data'] as $k=>$v}
+
+                        <div class="layui-form-item orderlistFont">
+                            <button class="layui-btn layui-btn-primary layui-btn-xs" style="float: left;margin-top: 8px;">{$v.id}</button>
+
+                            <label class="layui-form-label layui-inline" style="width: 200px;    margin-left: -15px;">订单号：{$v.order_number}</label>
+                            <label class="layui-form-label layui-inline" style="width: 200px;    margin-left: 30px;">创建时间：{$v.createtime}</label>
+                            <label class="layui-form-label layui-inline" style="width: 200px;    margin-left: 30px;">更新时间：{$v.updatetime}</label>
+                            <label class="layui-form-label layui-inline" style="width: 200px;    margin-left: 30px;">订单状态：{if condition="$v.paystatus eq 1"}已支付{else /}未支付{/if}</label>
+                        </div>
+                        <div class="layui-form-item orderlistFont" style="margin-left: -115px;">
+                            <label class="layui-form-label" style="width: 200px;    margin-left: 28px;">收函对象：<span class="tixingfont">{$v.accept_name}</span></label>
+                            <label class="layui-form-label" style="width: 200px;    margin-left: 30px;">发函对象：{$v.send_name}</label>
+                        </div>
+                        <div class="layui-form-item orderlistFont" style="margin-left: -45px;">
+                            <label class="layui-form-label" style="width: 200px;    margin-left: 28px;">需求描述：{$v.content}</label><br><br>
+                            <label class="layui-form-label" style="width: 200px;        margin-left: -300px;">接单人：{$v.username}</label>
+                        </div>
+                        <div class="layui-form-item orderlistFont">
+                            <label class="layui-form-label" style="width: 142px;cursor: pointer; "><a class="tixingfont" target="_blank" href="/jdroom/Orderlist/detail?order={$v.order_number}">查看订单详情</a></label>
+                            {if condition="$v.is_complete eq 0"}
+                                {if condition="$v.iscancle eq 1"}
+                                    <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;;margin-right: 22%;margin-left: 10px;" onclick="cancleOrder(this,'{$v.order_number}',0)">取消订单</button>
+                                {elseif condition="$v.iscancle eq 0" /}
+                                    <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;;margin-right: 22%;margin-left: 10px;">取消订单</button>
+                                {/if}
+                                {if condition="$v.number eq 1"}
+                                    <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;" onclick="cancleOrder(this,'{$v.order_number}',1)">完成订单</button>
+                                {elseif condition="$v.number eq 0"}
+                                    <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;" >完成订单</button>
+                                {/if}
+                            {notempty name="v.express_number"}
+                                <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;">填写订单号</button>
+                            {else /}
+                                <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;" onclick="expressOrder(this,'{$v.order_number}',1)">填写订单号</button>
+                            {/notempty}
+
+                                {switch name="v.isreceive"}
+                                    {case value="0"}
+                                        <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right" type="add" onclick="orderReceive(this,'{$v.order_number}')">接单</button>
+                                    {/case}
+                                    {case value="1"}
+                                        <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right" >已接单</button>
+                                    {/case}
+                                    {case value="2"}
+                                        <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right" type="cancle" onclick="orderReceive(this,'{$v.order_number}')">取消接单</button>
+                                    {/case}
+                                    {case value="2"}
+                                        <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right" >取消接单</button>
+                                    {/case}
+                                {/switch}
+                            {/if}
+                        </div>
+                        <hr>
+                    {/foreach}
+                <!--分页-->
+               {$list[1]->render();}
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

@@ -3,14 +3,23 @@ namespace app\index\controller;
 
 
 use app\common\controller\HomeBase;
-class Encrypt extends HomeBase
-{
+use app\index\model\User as UserModel;
+use think\Db;
+use think\Session;
+use think\Request;
+use think\Config;
+class Encrypt extends HomeBase{
 
     private $key = null;
 
-    protected function _initialize($key){
-        //加密key
-        $this->key   = $key;
+    // public function _initialize($key){
+    //     parent::_initialize();
+    //     //加密key
+    //     $this->key   = $key;
+    // }
+    protected function _initialize(){
+        parent::_initialize();
+         $this->key   = $key;
     }
 
     /**

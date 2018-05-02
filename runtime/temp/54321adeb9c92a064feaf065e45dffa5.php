@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\wamp64\www\sushe\public/../application/index\view\index\index.html";i:1522308475;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\wamp64\www\sushe\public/../application/index\view\index\index.html";i:1524810368;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>

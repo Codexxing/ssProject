@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd23b41-091b-4f8f-98a1-51f0443dbab9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/admin/index/index.html" afterPath="$PROJECT_DIR$/themes/admin/index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/admin/base.html" afterPath="$PROJECT_DIR$/themes/admin/base.html" />
     </list>
     <ignored path="juedoutest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,8 +65,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/admin/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.6899226">
-              <caret line="149" column="23" selection-start-line="149" selection-start-column="23" selection-end-line="149" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.09767442">
+              <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -159,8 +159,8 @@
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/common/controller/AdminBase.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Curlop.php" />
-        <option value="$PROJECT_DIR$/themes/admin/base.html" />
         <option value="$PROJECT_DIR$/themes/admin/index/index.html" />
+        <option value="$PROJECT_DIR$/themes/admin/base.html" />
       </list>
     </option>
   </component>
@@ -830,8 +830,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/admin/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6899226">
-          <caret line="149" column="23" selection-start-line="149" selection-start-column="23" selection-end-line="149" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.09767442">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
           <folding />
         </state>
       </provider>

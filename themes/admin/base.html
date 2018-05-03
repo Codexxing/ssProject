@@ -107,19 +107,29 @@
 <!--<script src="__JS__/layui/lay/dest/layui.all.js"></script>-->
 <script src="__JS__/layui/layui.all.js"></script>
 <script src="__JS__/admin.js"></script>
+<script src='http://cdn.bootcss.com/socket.io/1.3.7/socket.io.js'></script>
 {block name="js"}{/block}
 <!--页面JS脚本-->
 {block name="script"}
-    <script>
-        console.log( window.WebSocket);
-//        var ws = new WebSocket("ws://47.104.105.159"); //连接服务器
-//        var ws = new WebSocket("ws://127.0.0.1:80/index/Socket/index");
-//
-//        ws.onopen = function (event) { alert("已经与服务器建立了连接\r\n当前连接状态：" + this.readyState); };
-//        ws.onmessage = function (event) { alert("接收到服务器发送的数据：\r\n" + event.data); };
-//        ws.onclose = function (event) { console.log("已经与服务器断开连接\r\n当前连接状态：" + this.readyState); };
-//        ws.onerror = function (event) { console.log("WebSocket异常！"); };
-    </script>
+<script>
+    // 连接服务端，workerman.net:2120换成实际部署web-msg-sender服务的域名或者ip
+    var socket = io('http://test.juedouxin.com');
+    // uid可以是自己网站的用户id，以便针对uid推送以及统计在线人数
+    uid = 1;
+    // socket连接后以uid登录
+    socket.on('connect', function(){
+        socket.emit('login', uid);
+    });
+    // 后端推送来消息时
+    socket.on('new_msg', function(msg){
+        alert("收到消息："+msg);
+    });
+    // 后端推送来在线数据时
+    socket.on('update_online_count', function(online_stat){
+        alert(online_stat);
+    });
+</script>
+
 {/block}
 </body>
 </html>

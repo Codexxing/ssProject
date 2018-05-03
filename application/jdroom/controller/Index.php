@@ -23,16 +23,16 @@ class Index extends AdminBase
      */
     public function index()
     {
-        $param['order_number']='SH2018042110255101';
-        $conten =  Db::table('os_order_list')
-            ->alias('list')
-            ->join('os_letters_file file','list.order_number = file.order_number','LEFT')
-            ->field('list.content,list.replenish_content,file.*')
-            ->where(['list.order_number'=>$param['order_number'],'file.types'=>0])
-            ->find();
-        $conten['two_need']=Db::name('replenish')->where(['order_number'=>$param['order_number']])->select();
-        $contPdf = pdfAddImg($conten);
-        var_dump($contPdf);die;
+//        $param['order_number']='SH2018042110255101';
+//        $conten =  Db::table('os_order_list')
+//            ->alias('list')
+//            ->join('os_letters_file file','list.order_number = file.order_number','LEFT')
+//            ->field('list.content,list.replenish_content,file.*')
+//            ->where(['list.order_number'=>$param['order_number'],'file.types'=>0])
+//            ->find();
+//        $conten['two_need']=Db::name('replenish')->where(['order_number'=>$param['order_number']])->select();
+//        $contPdf = pdfAddImg($conten);
+//        var_dump($contPdf);die;
     
         $version = Db::query('SELECT VERSION() AS ver');
         $config  = [

@@ -3,24 +3,15 @@ namespace app\index\controller;
 
 
 use app\common\controller\HomeBase;
-use app\index\model\User as UserModel;
-use think\Db;
-use think\Session;
-use think\Request;
-use think\Config;
 class Encrypt extends HomeBase{
 
     private $key = null;
 
-    // public function _initialize($key){
-    //     parent::_initialize();
-    //     //加密key
-    //     $this->key   = $key;
-    // }
-    protected function _initialize(){
-        parent::_initialize();
+     public function __construct($key){
+         parent::__construct();
+         //加密key
          $this->key   = $key;
-    }
+     }
 
     /**
      * 加密
@@ -52,7 +43,7 @@ class Encrypt extends HomeBase{
      * @param string $content 被解密字符串
      * @return string
      */
-    function jdDecrypt($content){
+   public function jdDecrypt($content){
         $key = !empty($this->key) ? $this->key : "ceshi";
         $key = md5($key);
         //被解密的内容长度

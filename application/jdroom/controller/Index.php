@@ -25,7 +25,7 @@ class Index extends AdminBase
     {
         $redis = new \Redis();
              //连接
-     $redis->connect('39.105.69.72', 6379);
+     $redis->connect('127.0.0.1', 6379);
         var_dump($redis);
      //检测是否连接成功
      echo "Server is running: " . $redis->ping();die;

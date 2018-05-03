@@ -23,7 +23,7 @@ class Index extends AdminBase
      */
     public function index()
     {
-        $redis = new Redis();
+        $redis = new \Redis();
              //连接
      $redis->connect('127.0.0.1', 6379);
         var_dump($redis);

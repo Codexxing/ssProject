@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd23b41-091b-4f8f-98a1-51f0443dbab9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/controller/Curlop.php" afterPath="$PROJECT_DIR$/application/index/controller/Curlop.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/admin/base.html" afterPath="$PROJECT_DIR$/themes/admin/base.html" />
     </list>
     <ignored path="juedoutest.iws" />
@@ -49,8 +48,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/admin/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46976745">
-              <caret line="97" column="65" selection-start-line="97" selection-start-column="65" selection-end-line="97" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.6465116">
+              <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -768,8 +767,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/admin/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46976745">
-          <caret line="97" column="65" selection-start-line="97" selection-start-column="65" selection-end-line="97" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.6465116">
+          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
           <folding />
         </state>
       </provider>

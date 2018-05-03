@@ -26,6 +26,10 @@
     <!--头部-->
     <div class="layui-header header">
         <a href="" class="toptitle">诉舍后台管理系统</a>
+        <div id="msg">11</div>
+        <input id="text" value="">
+        <input type="submit" value="send" onclick="start()">
+        <input type="submit" value="close" onclick="close()">
         <a class="layui-nav-item toptitle" title="点击收缩菜单栏" id="slidedes" attr-type=1 style="margin-left: 26px;margin-top: 15px;cursor: pointer;">
             <img style="width: 35px;" src="/static/images/yingyong.png">
         </a>
@@ -86,16 +90,13 @@
     </div>
 
     <!--主体-->
-    {block name="body"}{/block}
+    {block name="body"}
+    {/block}
 
     <!--底部-->
     <div class="layui-footer footer">
         <div class="layui-main">
             <p>2016-2017 &copy; 诉舍后台系统</p>
-            <div id="msg">11</div>
-            <input id="text" value="">
-            <input type="submit" value="send" onclick="start()">
-            <input type="submit" value="close" onclick="close()">
         </div>
     </div>
 </div>

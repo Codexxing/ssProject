@@ -23,6 +23,7 @@ class Index extends AdminBase
      */
     public function index()
     {
+        phpinfo();die;
 //        $param['order_number']='SH2018042110255101';
 //        $conten =  Db::table('os_order_list')
 //            ->alias('list')

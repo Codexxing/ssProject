@@ -1,0 +1,1691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - sushe@39.105.69.72" uuid="d8721ab9-a3a3-4139-a008-1f6c8aad7def">
+    <database-info product="MySQL" version="5.7.22" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="sushe"/>
+      <table id="2" parent="1" name="os_address"/>
+      <table id="3" parent="1" name="os_admin_log"/>
+      <table id="4" parent="1" name="os_admin_user">
+        <comment>管理员表</comment>
+      </table>
+      <table id="5" parent="1" name="os_auth_group">
+        <comment>权限组表</comment>
+      </table>
+      <table id="6" parent="1" name="os_auth_group_access">
+        <comment>权限组规则表</comment>
+      </table>
+      <table id="7" parent="1" name="os_auth_rule">
+        <comment>规则表</comment>
+      </table>
+      <table id="8" parent="1" name="os_blacklist"/>
+      <table id="9" parent="1" name="os_category">
+        <comment>分类表</comment>
+      </table>
+      <table id="10" parent="1" name="os_company">
+        <comment>注册的公司信息</comment>
+      </table>
+      <table id="11" parent="1" name="os_feedback">
+        <comment>意见反馈表</comment>
+      </table>
+      <table id="12" parent="1" name="os_file_stamp">
+        <comment>电子发票和盖好章的律师函文件存储</comment>
+      </table>
+      <table id="13" parent="1" name="os_layer_file"/>
+      <table id="14" parent="1" name="os_letters_file">
+        <comment>用户存放的资料表</comment>
+      </table>
+      <table id="15" parent="1" name="os_logistics_company"/>
+      <table id="16" parent="1" name="os_message">
+        <comment>用户给律师和律师给用户发送的消息表</comment>
+      </table>
+      <table id="17" parent="1" name="os_order_list"/>
+      <table id="18" parent="1" name="os_order_list---bak"/>
+      <table id="19" parent="1" name="os_pay_callback">
+        <comment>付款之后的回调信息</comment>
+      </table>
+      <table id="20" parent="1" name="os_policyclause"/>
+      <table id="21" parent="1" name="os_price"/>
+      <table id="22" parent="1" name="os_recharge_record">
+        <comment>充值表</comment>
+      </table>
+      <table id="23" parent="1" name="os_reduced"/>
+      <table id="24" parent="1" name="os_replenish">
+        <comment>补充资料</comment>
+      </table>
+      <table id="25" parent="1" name="os_rewards">
+        <comment>付款列表</comment>
+      </table>
+      <table id="26" parent="1" name="os_share">
+        <comment>用户分享的日期</comment>
+      </table>
+      <table id="27" parent="1" name="os_system">
+        <comment>系统配置表</comment>
+      </table>
+      <table id="28" parent="1" name="os_timestamp_hash"/>
+      <table id="29" parent="1" name="os_user">
+        <comment>用户表</comment>
+      </table>
+      <table id="30" parent="1" name="os_user_message">
+        <comment>给用户发送的消息表</comment>
+      </table>
+      <table id="31" parent="1" name="os_user_verify"/>
+      <table id="32" parent="1" name="os_wallet"/>
+      <table id="33" parent="1" name="os_white_company">
+        <comment>不能使用优惠券的公司集合</comment>
+      </table>
+      <column id="34" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="35" parent="2" name="uid">
+        <comment>发件人的id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="36" parent="2" name="order_number">
+        <comment>订单号</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="37" parent="2" name="send_name">
+        <comment>发函人的姓名</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="38" parent="2" name="send_address">
+        <comment>发函人的地址</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="39" parent="2" name="send_phone">
+        <comment>发函人的电话</comment>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="40" parent="2" name="send_email">
+        <comment>发函人的电子邮件</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="41" parent="2" name="accept_name">
+        <comment>接收人的姓名</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="42" parent="2" name="accept_phone">
+        <comment>接收人的电话</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="43" parent="2" name="accept_address">
+        <comment>收件人的地址</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="44" parent="2" name="accept_email">
+        <comment>接收人的电子邮件</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="45" parent="2" name="companyCode">
+        <comment>企业信誉代码</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="46" parent="2" name="accept_type">
+        <comment>接收方式  0快递  1邮件  2两个都发</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="47" parent="2" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="48" parent="2" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <index id="49" parent="2" name="order">
+        <columns>order_number</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="50" parent="2" name="uid">
+        <columns>uid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="51" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="52" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="53" parent="3" name="uid">
+        <comment>登陆者id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="54" parent="3" name="admin_name">
+        <comment>管理者名字</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="55" parent="3" name="oper_log">
+        <comment>操作日志</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="56" parent="3" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="57" parent="3" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="58" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="59" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(5) unsigned</data-type>
+      </column>
+      <column id="60" parent="4" name="username">
+        <comment>管理员用户名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="61" parent="4" name="password">
+        <comment>管理员密码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="62" parent="4" name="mpassword">
+        <comment>明文密码</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="63" parent="4" name="status">
+        <comment>状态 1 启用 0 禁用</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="64" parent="4" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="65" parent="4" name="last_login_time">
+        <comment>最后登录时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="66" parent="4" name="last_login_ip">
+        <comment>最后登录IP</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="67" parent="4" name="times">
+        <comment>登录次数</comment>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="68" parent="4" name="username">
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="69" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="70" parent="4" name="username">
+        <columns>username</columns>
+        <underlying-index>username</underlying-index>
+      </key>
+      <column id="71" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+      </column>
+      <column id="72" parent="5" name="title">
+        <mandatory>1</mandatory>
+        <data-type>char(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="73" parent="5" name="status">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="74" parent="5" name="rules">
+        <comment>权限规则ID</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="75" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="76" parent="6" name="uid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+      </column>
+      <column id="77" parent="6" name="group_id">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+      </column>
+      <index id="78" parent="6" name="group_id">
+        <columns>group_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="79" parent="6" name="uid">
+        <columns>uid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="80" parent="6" name="uid_group_id">
+        <columns>uid
+group_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="81" parent="6" name="uid_group_id">
+        <columns>uid
+group_id</columns>
+        <underlying-index>uid_group_id</underlying-index>
+      </key>
+      <column id="82" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+      </column>
+      <column id="83" parent="7" name="name">
+        <comment>规则名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(80)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="84" parent="7" name="title">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="85" parent="7" name="type">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="86" parent="7" name="status">
+        <comment>状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="87" parent="7" name="pid">
+        <comment>父级ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>smallint(5) unsigned</data-type>
+      </column>
+      <column id="88" parent="7" name="icon">
+        <comment>图标</comment>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="89" parent="7" name="sort">
+        <comment>排序</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4) unsigned</data-type>
+      </column>
+      <column id="90" parent="7" name="condition">
+        <data-type>char(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <index id="91" parent="7" name="name">
+        <columns>name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="92" parent="7" name="name">
+        <columns>name</columns>
+        <underlying-index>name</underlying-index>
+      </key>
+      <key id="93" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="94" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="95" parent="8" name="content">
+        <comment>黑名单</comment>
+        <data-type>text</data-type>
+      </column>
+      <key id="96" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="97" parent="9" name="id">
+        <comment>分类ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="98" parent="9" name="name">
+        <comment>分类名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="99" parent="9" name="alias">
+        <comment>导航别名</comment>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="100" parent="9" name="content">
+        <comment>分类内容</comment>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="101" parent="9" name="thumb">
+        <comment>缩略图</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="102" parent="9" name="icon">
+        <comment>分类图标</comment>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="103" parent="9" name="list_template">
+        <comment>分类列表模板</comment>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="104" parent="9" name="detail_template">
+        <comment>分类详情模板</comment>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="105" parent="9" name="type">
+        <comment>分类类型  1  列表  2 单页</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="106" parent="9" name="sort">
+        <comment>排序</comment>
+        <mandatory>1</mandatory>
+        <data-type>smallint(5) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="107" parent="9" name="pid">
+        <comment>上级分类ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="108" parent="9" name="path">
+        <comment>路径</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="109" parent="9" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="110" parent="9" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="111" parent="10" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="112" parent="10" name="uid">
+        <comment>用户的id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="113" parent="10" name="username">
+        <comment>法人姓名</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="114" parent="10" name="com_name">
+        <comment>企业名称</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="115" parent="10" name="com_cod">
+        <comment>企业信誉代码</comment>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="116" parent="10" name="com_mail">
+        <comment>企业邮箱</comment>
+        <data-type>varchar(150)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="117" parent="10" name="serviceId">
+        <comment>认证返回的认证id 只能证明企业的真实性</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="118" parent="10" name="com_times">
+        <comment>企业验证的次数</comment>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="119" parent="10" name="cash_times">
+        <comment>金额验证次数</comment>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="120" parent="10" name="money">
+        <comment>e签宝给对方的打款金额</comment>
+        <data-type>decimal(2)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="121" parent="10" name="mobile">
+        <comment>验证时的手机号</comment>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="122" parent="10" name="provice">
+        <comment>企业银行账号开户行所在省份</comment>
+        <data-type>varchar(150)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="123" parent="10" name="city">
+        <comment>企业银行账号开户行所在城市</comment>
+        <data-type>varchar(150)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="124" parent="10" name="bank">
+        <comment>企业银行账号开户行名称</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="125" parent="10" name="subbranch">
+        <comment>企业银行账号开户行支行全称</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="126" parent="10" name="cardno">
+        <comment>企业银行账号</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="127" parent="10" name="is_verify_company">
+        <comment>是否验证了企业的真实性 0没有  1验证成功</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="128" parent="10" name="is_verify_pay">
+        <comment>是否进行了打款的验证  0没有验证 1已验证</comment>
+        <data-type>tinyint(2)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="129" parent="10" name="is_bind">
+        <comment>是否验证成功并绑定了对应的手机号  0 没有  1绑定</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="130" parent="10" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="131" parent="10" name="bindtime">
+        <comment>认证绑定时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="132" parent="10" name="verifytime">
+        <comment>企业验证时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="133" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="134" parent="11" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="135" parent="11" name="uid">
+        <comment>用户id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="136" parent="11" name="content">
+        <comment>反馈内容</comment>
+        <data-type>text</data-type>
+      </column>
+      <column id="137" parent="11" name="email">
+        <comment>邮箱</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="138" parent="11" name="types">
+        <comment>类别 默认 0 ios</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="139" parent="11" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="140" parent="11" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="141" parent="11" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="142" parent="12" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="143" parent="12" name="admin_id">
+        <comment>后台管理员id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="144" parent="12" name="order_number">
+        <comment>电子发票路径</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="145" parent="12" name="elect_bill">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="146" parent="12" name="elect_bill_name">
+        <comment>电子发票名字</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="147" parent="12" name="file_stamp">
+        <comment>盖好章的律师函的路径</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="148" parent="12" name="file_stamp_name">
+        <comment>律师函名字</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="149" parent="12" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="150" parent="12" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="151" parent="12" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="152" parent="13" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="153" parent="13" name="login_id">
+        <comment>当前登录者的id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="154" parent="13" name="files">
+        <comment>上传的资料</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="155" parent="13" name="filename">
+        <comment>文件名</comment>
+        <data-type>varchar(150)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="156" parent="13" name="times">
+        <comment>修改上传的次数</comment>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="157" parent="13" name="order_number">
+        <comment>订单号</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="158" parent="13" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="159" parent="13" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <index id="160" parent="13" name="order">
+        <columns>order_number</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="161" parent="13" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="162" parent="14" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="163" parent="14" name="order_number">
+        <comment>函件的订单号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="164" parent="14" name="file">
+        <comment>内容资料以及补充的资料</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="165" parent="14" name="status">
+        <comment>0第一次资料  1补充的资料</comment>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="166" parent="14" name="types">
+        <comment>0普通证件的信息  1企业证件信息</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="167" parent="14" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="168" parent="14" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="169" parent="14" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="170" parent="15" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="171" parent="15" name="company_letter">
+        <comment>快递公司代码</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="172" parent="15" name="company_name">
+        <comment>快递公司名称</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="173" parent="15" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="174" parent="15" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="175" parent="15" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="176" parent="16" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="177" parent="16" name="aid">
+        <comment>律师iD</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="178" parent="16" name="order_number">
+        <comment>订单号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="179" parent="16" name="uid">
+        <comment>用户id</comment>
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="180" parent="16" name="content">
+        <comment>消息内容</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="181" parent="16" name="status">
+        <comment>类型  1需求描述的问题  2资料问题描述  3律师函修改描述</comment>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="182" parent="16" name="send_type">
+        <comment>发送的对象  1律师给用户发提醒   2用户给律师发送修改意见</comment>
+        <data-type>tinyint(2)</data-type>
+      </column>
+      <column id="183" parent="16" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="184" parent="16" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="185" parent="16" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="186" parent="17" name="id">
+        <comment>ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="187" parent="17" name="uid">
+        <comment>用户ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+      </column>
+      <column id="188" parent="17" name="order_number">
+        <comment>订单号</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="189" parent="17" name="content">
+        <comment>需求描述</comment>
+        <data-type>text</data-type>
+      </column>
+      <column id="190" parent="17" name="replenish_content">
+        <comment>用户补充的需求</comment>
+        <data-type>text</data-type>
+      </column>
+      <column id="191" parent="17" name="replenishId">
+        <comment>补充资料对应的图片id  默认0是没有图片</comment>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="192" parent="17" name="is_complete">
+        <comment>是否完成订单  0未完成  1已完成  2已取消</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="193" parent="17" name="email_complete">
+        <comment>邮件是否发送  0未发送  1已发送</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="194" parent="17" name="express_complete">
+        <comment>快递是否发送  0未寄出  1已寄出 2不选择</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="195" parent="17" name="step">
+        <comment>完成步骤</comment>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="196" parent="17" name="express_number">
+        <comment>快递的单号</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="197" parent="17" name="auid">
+        <comment>律师id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="198" parent="17" name="is_refund_money">
+        <comment>是否已经退完款  0没有  1已经退了</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="199" parent="17" name="is_refund">
+        <comment>用户是否可以退款  0可以退款  1不可以</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="200" parent="17" name="send_type">
+        <comment>发函类型  0个人发函  1企业发函</comment>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="201" parent="17" name="is_issue">
+        <comment>用户对律师函是否有问题  0有问题  1没问题确认发函  2等待用户确认  3还没进行时的无状态</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;3&apos;</default-expression>
+      </column>
+      <column id="202" parent="17" name="is_have">
+        <comment>用户是否有资料补充  0没有资料补充  1完善需求  2填写了第一次资料</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;2&apos;</default-expression>
+      </column>
+      <column id="203" parent="17" name="layerIssue">
+        <comment>律师对用户的资料确认是否还有问题  0审核完毕资料有问题  1完毕并没问题  3审核中</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;3&apos;</default-expression>
+      </column>
+      <column id="204" parent="17" name="paystatus">
+        <comment>支付状态  0未支付  1已支付</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="205" parent="17" name="times">
+        <comment>让律师修改律师函一共修改次数</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="206" parent="17" name="likes">
+        <comment>订单点赞数</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="207" parent="17" name="receive_order">
+        <comment>是否接单  0未接单  1已接单</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="208" parent="17" name="layerletter_have">
+        <comment>是否已出律师函  0正在出涵  1已出函  2还没有进行到律师函步骤</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="209" parent="17" name="canclereceivetime">
+        <comment>取消接单的时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="210" parent="17" name="receivetime">
+        <comment>接单时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="211" parent="17" name="completetime">
+        <comment>订单完成时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="212" parent="17" name="cancletime">
+        <comment>取消订单时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="213" parent="17" name="expresstime">
+        <comment>填写订单号的时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="214" parent="17" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="215" parent="17" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="216" parent="17" name="cancle_reason">
+        <comment>取消订单的理由</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="217" parent="17" name="signServiceId">
+        <comment>用户签署授权书后e签宝返回的签署Id</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="218" parent="17" name="shouquanUrl">
+        <comment>授权书签字好之后的url</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="219" parent="17" name="solid_url_before">
+        <comment>三个证据固化签章之前的pdf路径</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="220" parent="17" name="solid_url_after">
+        <comment>三个证据固化签章之后的pdf路径</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="221" parent="17" name="is_delete">
+        <comment>用户资料是否进行了删除，0 没有 1已删除</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="222" parent="17" name="recude_id">
+        <comment>绑定的优惠券的id  默认为0 没有绑定</comment>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="223" parent="17" name="order_number">
+        <columns>order_number</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="224" parent="17" name="send_type">
+        <columns>send_type</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="225" parent="17" name="uid">
+        <columns>uid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="226" parent="17" name="order_number">
+        <columns>order_number</columns>
+        <underlying-index>order_number</underlying-index>
+      </key>
+      <key id="227" parent="17" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="228" parent="18" name="id">
+        <comment>ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="229" parent="18" name="uid">
+        <comment>用户ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+      </column>
+      <column id="230" parent="18" name="order_number">
+        <comment>订单号</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="231" parent="18" name="content">
+        <comment>需求描述</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="232" parent="18" name="replenish_content">
+        <comment>用户补充的需求</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="233" parent="18" name="is_complete">
+        <comment>是否完成订单  0未完成  1已完成  2已取消</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="234" parent="18" name="email_complete">
+        <comment>邮件是否发送  0未发送  1已发送</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="235" parent="18" name="express_complete">
+        <comment>快递是否发送  0未寄出  1已寄出 3不选择</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="236" parent="18" name="step">
+        <comment>完成步骤</comment>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="237" parent="18" name="express_number">
+        <comment>快递的单号</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="238" parent="18" name="auid">
+        <comment>律师id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="239" parent="18" name="send_type">
+        <comment>发函类型  0个人发函  1企业发函</comment>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="240" parent="18" name="is_issue">
+        <comment>用户对律师函是否有问题  0有问题  1没问题确认发函  2等待用户确认  3还没进行时的无状态</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;3&apos;</default-expression>
+      </column>
+      <column id="241" parent="18" name="is_have">
+        <comment>用户是否有资料补充  0没有资料补充  1补充完毕</comment>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="242" parent="18" name="layerIssue">
+        <comment>律师对用户的资料确认是否还有问题  0审核完毕资料有问题  1完毕并没问题  3审核中</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;3&apos;</default-expression>
+      </column>
+      <column id="243" parent="18" name="paystatus">
+        <comment>支付状态  0未支付  1已支付</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="244" parent="18" name="times">
+        <comment>让律师修改律师函一共修改次数</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="245" parent="18" name="likes">
+        <comment>订单点赞数</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="246" parent="18" name="receive_order">
+        <comment>是否接单  0未接单  1已接单</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="247" parent="18" name="layerletter_have">
+        <comment>是否已出律师函  0正在出涵  1已出函</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="248" parent="18" name="canclereceivetime">
+        <comment>取消接单的时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="249" parent="18" name="receivetime">
+        <comment>接单时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="250" parent="18" name="completetime">
+        <comment>订单完成时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="251" parent="18" name="cancletime">
+        <comment>取消订单时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="252" parent="18" name="expresstime">
+        <comment>填写订单号的时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="253" parent="18" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="254" parent="18" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="255" parent="18" name="cancle_reason">
+        <comment>取消订单的理由</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="256" parent="18" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="257" parent="19" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="258" parent="19" name="callbackinfo">
+        <comment>回调的信息</comment>
+        <data-type>text</data-type>
+      </column>
+      <column id="259" parent="19" name="types">
+        <comment>0微信 1支付宝</comment>
+        <data-type>tinyint(2)</data-type>
+      </column>
+      <column id="260" parent="19" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="261" parent="19" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="262" parent="20" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="263" parent="20" name="content">
+        <comment>内容</comment>
+        <data-type>text</data-type>
+      </column>
+      <key id="264" parent="20" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="265" parent="21" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="266" parent="21" name="money">
+        <comment>律师函的价格  默认168</comment>
+        <data-type>decimal(10)</data-type>
+        <default-expression>&apos;168&apos;</default-expression>
+      </column>
+      <column id="267" parent="21" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="268" parent="21" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="269" parent="22" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="270" parent="22" name="uid">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="271" parent="22" name="money">
+        <comment>充值钱数</comment>
+        <data-type>decimal(10,2)</data-type>
+      </column>
+      <column id="272" parent="22" name="pay_type">
+        <comment>充值的客户端 0微信 1支付宝</comment>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="273" parent="22" name="phone_type">
+        <comment>手机类型</comment>
+        <data-type>varchar(150)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="274" parent="22" name="createtime">
+        <comment>充值日期</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="275" parent="22" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="276" parent="23" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+      </column>
+      <column id="277" parent="23" name="uid">
+        <comment>用户id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="278" parent="23" name="money">
+        <comment>优惠的钱数</comment>
+        <data-type>decimal(10,2)</data-type>
+        <default-expression>&apos;0.00&apos;</default-expression>
+      </column>
+      <column id="279" parent="23" name="types">
+        <comment>优惠券获得的方式  1注册给的 2活动  3系统发放 4邀请好友获得  5新用户第一单</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;3&apos;</default-expression>
+      </column>
+      <column id="280" parent="23" name="is_use">
+        <comment>是否已经使用  0未使用  1已使用</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="281" parent="23" name="reduce_number">
+        <comment>优惠券的兑换码</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="282" parent="23" name="is_conversion">
+        <comment>优惠券是否兑换 0未兑换 1已兑换</comment>
+        <data-type>tinyint(3)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="283" parent="23" name="overtime">
+        <comment>过期时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="284" parent="23" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="285" parent="23" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <index id="286" parent="23" name="number">
+        <columns>reduce_number</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="287" parent="23" name="overtime">
+        <columns>overtime</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="288" parent="23" name="uid">
+        <columns>uid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="289" parent="23" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="290" parent="24" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="291" parent="24" name="order_number">
+        <comment>订单号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="292" parent="24" name="content">
+        <comment>补充资料内容</comment>
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="293" parent="24" name="url">
+        <comment>补充资料的图片路径</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="294" parent="24" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="295" parent="24" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="296" parent="25" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="297" parent="25" name="uid">
+        <comment>付款用户id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="298" parent="25" name="order_number">
+        <comment>律师函订单号</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="299" parent="25" name="out_trade_no">
+        <comment>此订单号为商户唯一订单号  自己定义的订单号</comment>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="300" parent="25" name="trade_no">
+        <comment>支付宝和微信支付的订单号</comment>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="301" parent="25" name="client_type">
+        <comment>支付类型  0微信 1支付宝</comment>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="302" parent="25" name="trade_status">
+        <comment>交易状态</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="303" parent="25" name="pay_status">
+        <comment>付款状态  0未付款  1已付款  2失败 3已退款</comment>
+        <data-type>tinyint(4)</data-type>
+      </column>
+      <column id="304" parent="25" name="total_amount">
+        <comment>付款钱数  微信的钱数不带小数直接是整数以分为单位  是整数除以100才是真实的付款数</comment>
+        <data-type>decimal(10,2)</data-type>
+        <default-expression>&apos;0.00&apos;</default-expression>
+      </column>
+      <column id="305" parent="25" name="platform_money">
+        <comment>平台抽取的钱数</comment>
+        <mandatory>1</mandatory>
+        <data-type>decimal(10,2)</data-type>
+        <default-expression>&apos;0.00&apos;</default-expression>
+      </column>
+      <column id="306" parent="25" name="coupon_id">
+        <comment>优惠券id</comment>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="307" parent="25" name="is_coupon">
+        <comment>是否使用优惠券 0没有  1有</comment>
+        <data-type>tinyint(2)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="308" parent="25" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="309" parent="25" name="updatetime">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="310" parent="25" name="gmt_refund">
+        <comment>交易退款时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="311" parent="25" name="callback_id">
+        <comment>表pay_callback信息对应的id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="312" parent="25" name="refund_id">
+        <comment>退款单号</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <index id="313" parent="25" name="outno">
+        <columns>out_trade_no</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="314" parent="25" name="uid">
+        <columns>uid
+order_number</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="315" parent="25" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="316" parent="26" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="317" parent="26" name="uid">
+        <comment>用户id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="318" parent="26" name="sharetime">
+        <comment>分享的日期</comment>
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <key id="319" parent="26" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="320" parent="27" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="321" parent="27" name="name">
+        <comment>配置项名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="322" parent="27" name="value">
+        <comment>配置项值</comment>
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <key id="323" parent="27" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="324" parent="28" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="325" parent="28" name="order_number">
+        <comment>订单号</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="326" parent="28" name="before_hash">
+        <comment>原来之前生成的hash值</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="327" parent="28" name="after_hash">
+        <comment>时间戳返回的hash值</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="328" parent="28" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="329" parent="28" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="330" parent="28" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="331" parent="29" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="332" parent="29" name="username">
+        <comment>用户名</comment>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="333" parent="29" name="password">
+        <comment>密码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="334" parent="29" name="mobile">
+        <comment>手机</comment>
+        <data-type>varchar(11)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="335" parent="29" name="img">
+        <comment>头像</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="336" parent="29" name="email">
+        <comment>邮箱</comment>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="337" parent="29" name="status">
+        <comment>用户启用状态  1 正常  0禁止</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="338" parent="29" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="339" parent="29" name="last_login_time">
+        <comment>最后登陆时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="340" parent="29" name="phone_type">
+        <comment>手机登陆类型</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="341" parent="29" name="last_login_ip">
+        <comment>最后登录IP</comment>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="342" parent="29" name="qq_name">
+        <comment>第三方昵称昵称</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="343" parent="29" name="qq_openid">
+        <comment>第三方openid</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="344" parent="29" name="qq_img">
+        <comment>第三方头像</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="345" parent="29" name="qq_unid">
+        <comment>用户的unionid</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="346" parent="29" name="wx_name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="347" parent="29" name="wx_openid">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="348" parent="29" name="wx_img">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="349" parent="29" name="wx_unid">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="350" parent="29" name="t_type">
+        <comment>注册的类型方式   0微信  1 qq  2手机号直接注册</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;2&apos;</default-expression>
+      </column>
+      <column id="351" parent="29" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="352" parent="29" name="real_auth">
+        <comment>实名认证的信息</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="353" parent="29" name="usertoken">
+        <comment>用户的token</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="354" parent="29" name="tokentime">
+        <comment>生成token当时的时间戳</comment>
+        <data-type>varchar(15)</data-type>
+      </column>
+      <column id="355" parent="29" name="is_agree">
+        <comment>是否同意开始条款  0不同意 1同意</comment>
+        <data-type>tinyint(2)</data-type>
+      </column>
+      <column id="356" parent="29" name="accountid">
+        <comment>e签宝添加账户之后返回的accountId</comment>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="357" parent="29" name="usertype">
+        <comment>0 普通用户   1企业  3没有选择</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="358" parent="29" name="userauth">
+        <comment>是否进行了企业或者个人认证  0未认证 1已认证</comment>
+        <data-type>tinyint(2)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="359" parent="29" name="company_id">
+        <comment>绑定企业认证的id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="360" parent="29" name="facetime">
+        <comment>实名认证时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="361" parent="29" name="invite_id">
+        <comment>邀请者id</comment>
+        <data-type>int(11)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="362" parent="29" name="id">
+        <columns>id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="363" parent="29" name="mobile">
+        <columns>mobile</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="364" parent="29" name="password">
+        <columns>password</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="365" parent="29" name="qq_openid">
+        <columns>qq_openid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="366" parent="29" name="wx_openid">
+        <columns>wx_openid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="367" parent="29" name="id">
+        <columns>id</columns>
+        <underlying-index>id</underlying-index>
+      </key>
+      <key id="368" parent="29" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="369" parent="30" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="370" parent="30" name="admin_name">
+        <comment>后台用户</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="371" parent="30" name="uid">
+        <comment>用户id</comment>
+        <data-type>int(8)</data-type>
+      </column>
+      <column id="372" parent="30" name="uname">
+        <comment>前台用户</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="373" parent="30" name="content">
+        <comment>消息内容</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="374" parent="30" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="375" parent="30" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="376" parent="31" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="377" parent="31" name="mobile">
+        <comment>用户的手机号</comment>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="378" parent="31" name="phonecode">
+        <comment>手机验证码</comment>
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="379" parent="31" name="codetime">
+        <comment>验证码的创建时间 时间戳</comment>
+        <data-type>varchar(15)</data-type>
+      </column>
+      <index id="380" parent="31" name="mobile">
+        <columns>mobile</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="381" parent="31" name="mobile">
+        <columns>mobile</columns>
+        <underlying-index>mobile</underlying-index>
+      </key>
+      <key id="382" parent="31" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="383" parent="32" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="384" parent="32" name="uid">
+        <comment>用户id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="385" parent="32" name="use_money">
+        <comment>可用钱数</comment>
+        <data-type>decimal(10,2)</data-type>
+      </column>
+      <column id="386" parent="32" name="total_money">
+        <comment>总共钱数</comment>
+        <data-type>decimal(10,2)</data-type>
+      </column>
+      <column id="387" parent="32" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="388" parent="32" name="updatetime">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="389" parent="32" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="390" parent="33" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="391" parent="33" name="uid">
+        <comment>用户的id</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="392" parent="33" name="username">
+        <comment>法人姓名</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="393" parent="33" name="com_name">
+        <comment>企业名称</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="394" parent="33" name="com_cod">
+        <comment>企业信誉代码</comment>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="395" parent="33" name="status">
+        <comment>是否启用 0不启用  1启用</comment>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="396" parent="33" name="createtime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="397" parent="33" name="updatetime">
+        <comment>认证绑定时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <index id="398" parent="33" name="com_cod">
+        <columns>com_cod</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="399" parent="33" name="com_cod">
+        <columns>com_cod</columns>
+        <underlying-index>com_cod</underlying-index>
+      </key>
+      <key id="400" parent="33" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

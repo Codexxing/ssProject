@@ -69,8 +69,8 @@ class Whitecompany extends AdminBase
     public function update()
     {
             $data = input();
-            $id =  Db::table('os_white_company')->where(['com_cod'=>$data['com_cod']])->value('com_name');
-            if($id){$this->error('该机构信誉代码对应公司已存在');exit;}
+//            $id =  Db::table('os_white_company')->where(['com_cod'=>$data['com_cod']])->value('com_name');
+//            if($id){$this->error('该机构信誉代码对应公司已存在');exit;}
             $arr=[
                 'uid'=>Session::get('admin_id'),
                 'username'=>$data['username'],

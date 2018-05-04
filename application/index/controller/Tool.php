@@ -571,7 +571,7 @@ class Tool extends HomeBase{
             $name='';
             if($phone['company_id'] && $phone['usertype']==1 ){//正式认证为企业了
                 $codes = Db::table('os_company')->where(['id'=>$phone['company_id']])->value('com_cod');
-                $name =Db::table('os_white_company')->where(['com_cod'=>$codes])->value('com_name');//公司名称
+                $name =Db::table('os_white_company')->where(['com_cod'=>$codes,'status'=>1])->value('com_name');//公司名称
             }
 //            var_dump($name);
             if(empty($name)) {

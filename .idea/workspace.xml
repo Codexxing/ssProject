@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd23b41-091b-4f8f-98a1-51f0443dbab9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/controller/Tool.php" afterPath="$PROJECT_DIR$/application/index/controller/Tool.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="juedoutest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,35 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tool.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tool.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/index/controller/Tool.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.1551723">
-              <caret line="569" column="49" selection-start-line="569" selection-start-column="49" selection-end-line="569" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Whitecompany.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp57285/var/www/html/sushe/application/jdroom/controller/Whitecompany.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.071428">
-              <caret line="72" column="59" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
-              <folding>
-                <element signature="e#608#989#0#PHP" expanded="false" />
-                <element signature="e#1042#1106#0#PHP" expanded="false" />
-                <element signature="e#1179#1327#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp58660/var/www/html/sushe/themes/admin/whitecompany/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64705884">
-              <caret line="29" column="166" selection-start-line="29" selection-start-column="166" selection-end-line="29" selection-end-column="166" />
+            <state vertical-scroll-proportion="0.6298701">
+              <caret line="573" column="30" selection-start-line="573" selection-start-column="30" selection-end-line="573" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -747,30 +723,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Tool.php">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.1551723">
-          <caret line="569" column="49" selection-start-line="569" selection-start-column="49" selection-end-line="569" selection-end-column="49" />
+        <state vertical-scroll-proportion="-4.2352943">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp57285/var/www/html/sushe/application/jdroom/controller/Whitecompany.php">
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Tool.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.071428">
-          <caret line="72" column="59" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
-          <folding>
-            <element signature="e#608#989#0#PHP" expanded="false" />
-            <element signature="e#1042#1106#0#PHP" expanded="false" />
-            <element signature="e#1179#1327#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp58660/var/www/html/sushe/themes/admin/whitecompany/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64705884">
-          <caret line="29" column="166" selection-start-line="29" selection-start-column="166" selection-end-line="29" selection-end-column="166" />
+        <state vertical-scroll-proportion="0.6298701">
+          <caret line="573" column="30" selection-start-line="573" selection-start-column="30" selection-end-line="573" selection-end-column="30" />
           <folding />
         </state>
       </provider>

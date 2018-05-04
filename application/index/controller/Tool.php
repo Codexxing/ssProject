@@ -118,15 +118,6 @@ class Tool extends HomeBase{
             $order=$data['order']; $content=$data['content'];
             $param = "$order,$content";
         }
-        $p = Db::table('os_user_verify')->where(['mobile' => $phone])->value('mobile');
-        if ($p) {
-            Db::name('user_verify')->where(['mobile' => $phone])->update(['phonecode' => $param, 'codetime' => time()]);
-        } else {
-            Db::name('user_verify')->insert(['mobile' => $phone, 'phonecode' => $param, 'codetime' => time()]);
-        }
-
-        jsonSend(1, '验证码发送成功',['code'=>$param]);
-        exit;
         $options['accountsid']='86e769613c7d0b3b552fb1764ba78666';
         $options['token']='31e343b1b1df94a26d7976b9ba309883';
         $ucpass = new Ucpaas($options);
@@ -474,22 +465,30 @@ class Tool extends HomeBase{
 //                var_dump($layLetter_img);die;
             }
             //查找需求描述与需求的图片
-            $conten = Db::table('os_order_list')
+//            $conten = Db::table('os_order_list')
+//                ->alias('list')
+//                ->join('os_letters_file file','list.order_number = file.order_number','LEFT')
+//                ->field('list.content,list.replenish_content,file.*')
+//                ->where(['list.order_number'=>$param['order_number']])
+//                ->select();
+//            $contArr=[];
+//            foreach($conten as $k=>$v){
+//                $contArr['content']=$v['content'];
+//                if($v['status']==0){ $contArr['content_file']=$v['file'];}//第一次需求
+//                if($v['replenish_content']){
+//                    $contArr['replenish_content']=$v['replenish_content'];
+//                    if($v['status']==1){ $contArr['rep_file']=$v['file'];}//补充的
+//                }
+//            }
+//           $contPdf = pdfAddImg($contArr);
+            $conten =  Db::table('os_order_list')
                 ->alias('list')
                 ->join('os_letters_file file','list.order_number = file.order_number','LEFT')
                 ->field('list.content,list.replenish_content,file.*')
-                ->where(['list.order_number'=>$param['order_number']])
-                ->select();
-            $contArr=[];
-            foreach($conten as $k=>$v){
-                $contArr['content']=$v['content'];
-                if($v['status']==0){ $contArr['content_file']=$v['file'];}//第一次需求
-                if($v['replenish_content']){
-                    $contArr['replenish_content']=$v['replenish_content'];
-                    if($v['status']==1){ $contArr['rep_file']=$v['file'];}//补充的
-                }
-            }
-           $contPdf = pdfAddImg($contArr);
+                ->where(['list.order_number'=>$param['order_number'],'file.types'=>0])
+                ->find();
+            $conten['two_need']=Db::name('replenish')->where(['order_number'=>$param['order_number']])->select();
+            $contPdf = pdfAddImg($conten);
             $zhengm = pdf2Img($contPdf,'zhengming');
             $resArr = ['impower_img'=>$impower_img,'layLetter_img'=>$layLetter_img,'zhengming'=>$zhengm];
             $imgarr = [];
@@ -566,19 +565,27 @@ class Tool extends HomeBase{
         if(Request::instance()->isPost()){
             $param = Request::instance()->param();
             $token = Request::instance()->header('token');
-            $phone = getOneUserVal(['id'=>$param['uid']],'mobile');
-            $v = validateUser('token',$phone,$token);
-            if($v>0){
-                jsonSend(3,'验证信息已失效');exit;
+            $phone = getUserVal(['id'=>$param['uid']],'mobile,usertype,company_id');
+            $v = validateUser('token',$phone['mobile'],$token);
+            if($v>0){            jsonSend(3,'验证信息已失效');exit;        }
+            $name='';
+            if($phone['company_id'] && $phone['usertype']==1 ){//正式认证为企业了
+                $codes = Db::table('os_company')->where(['id'=>$phone['company_id']])->value('com_cod');
+                $name =Db::table('os_white_company')->where(['com_cod'=>$codes])->value('com_name');//公司名称
             }
-            array_key_exists('is_use',$param) ? $use = 1 : $use = 0;//查询已使用的优惠券   默认查询未使用的
-            array_key_exists('is_due',$param) ?  $due = '< time' : $due = '> time';//查询已过期的优惠券  默认查询未过期的
-            $res = Db::name('reduced')->where(['uid'=>$param['uid'],'is_use'=>$use])->where('overtime',$due,getFormatTime())->select();
-            foreach($res as $k=>$v){
-                ($v['overtime'] < date('Y-m-d H:i:s', $_SERVER['REQUEST_TIME'])) ? $res[$k]['is_due']=0 : $res[$k]['is_due']=1;//是否过期
-                $res[$k]['overtime'] =date('Y-m-d',strtotime($v['overtime']));
-                $res[$k]['createtime'] =date('Y-m-d',strtotime($v['createtime']));
-                $res[$k]['updatetime'] =date('Y-m-d',strtotime($v['updatetime']));
+//            var_dump($name);
+            if(empty($name)) {
+                array_key_exists('is_use', $param) ? $use = 1 : $use = 0;//查询已使用的优惠券   默认查询未使用的
+                array_key_exists('is_due', $param) ? $due = '< time' : $due = '> time';//查询已过期的优惠券  默认查询未过期的
+                $res = Db::name('reduced')->where(['uid' => $param['uid'], 'is_use' => $use])->where('overtime', $due, getFormatTime())->select();
+                foreach ($res as $k => $v) {
+                    ($v['overtime'] < date('Y-m-d H:i:s', $_SERVER['REQUEST_TIME'])) ? $res[$k]['is_due'] = 0 : $res[$k]['is_due'] = 1;//是否过期
+                    $res[$k]['overtime'] = date('Y-m-d', strtotime($v['overtime']));
+                    $res[$k]['createtime'] = date('Y-m-d', strtotime($v['createtime']));
+                    $res[$k]['updatetime'] = date('Y-m-d', strtotime($v['updatetime']));
+                }
+            }else{
+                $res = [];//白名单企业信息不展示优惠券
             }
             jsonSend(1,'获取成功',$res);
         }else{

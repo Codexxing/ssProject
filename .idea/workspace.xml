@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd23b41-091b-4f8f-98a1-51f0443dbab9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/jdroom/controller/Index.php" afterPath="$PROJECT_DIR$/application/jdroom/controller/Index.php" />
     </list>
     <ignored path="juedoutest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,67 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp57385/var/www/html/sushe/application/config.php">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/jdroom/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.642857">
-              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Orderlist.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp03296/var/www/html/sushe/application/jdroom/controller/Orderlist.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.8793104">
-              <caret line="238" column="4" selection-start-line="238" selection-start-column="4" selection-end-line="238" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Orderlist.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp03782/var/www/html/sushe/application/common/model/Orderlist.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.189655">
-              <caret line="137" column="42" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp06022/var/www/html/sushe/themes/admin/orderlist/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58914727">
-              <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp32603/var/www/html/sushe/themes/admin/user/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.214286">
-              <caret line="51" column="33" selection-start-line="47" selection-start-column="26" selection-end-line="51" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp36866/var/www/html/sushe/themes/admin/orderlist/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-53.982758">
-              <caret line="325" column="58" selection-start-line="325" selection-start-column="49" selection-end-line="325" selection-end-column="58" />
+            <state vertical-scroll-proportion="-0.1767442">
+              <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -168,7 +112,6 @@
         <option value="$PROJECT_DIR$/themes/admin/index/index.html" />
         <option value="$PROJECT_DIR$/themes/admin/base.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp58672/etc/php.ini" />
-        <option value="$PROJECT_DIR$/application/jdroom/controller/Index.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp13784/var/www/html/sushe/application/index/controller/Tool.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Tool.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp53095/var/www/html/sushe/application/index/controller/Tool.php" />
@@ -176,10 +119,11 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp58660/var/www/html/sushe/themes/admin/whitecompany/edit.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp36866/var/www/html/sushe/themes/admin/orderlist/detail.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp03296/var/www/html/sushe/application/jdroom/controller/Orderlist.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp57385/var/www/html/sushe/application/config.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp32603/var/www/html/sushe/themes/admin/user/index.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp03782/var/www/html/sushe/application/common/model/Orderlist.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp06022/var/www/html/sushe/themes/admin/orderlist/index.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp57385/var/www/html/sushe/application/config.php" />
+        <option value="$PROJECT_DIR$/application/jdroom/controller/Index.php" />
       </list>
     </option>
   </component>
@@ -354,6 +298,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jdroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sushe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sushe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdroom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -840,13 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/jdroom/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/admin/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -900,14 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp03296/var/www/html/sushe/application/jdroom/controller/Orderlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8793104">
-          <caret line="238" column="4" selection-start-line="238" selection-start-column="4" selection-end-line="238" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp28196/var/www/html/sushe/themes/admin/orderlist/interact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7069768">
@@ -943,33 +894,23 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp57385/var/www/html/sushe/application/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.642857">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.7658915">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp36866/var/www/html/sushe/themes/admin/orderlist/detail.html">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp03296/var/www/html/sushe/application/jdroom/controller/Orderlist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-53.982758">
-          <caret line="325" column="58" selection-start-line="325" selection-start-column="49" selection-end-line="325" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.27154472">
+          <caret line="238" column="4" selection-start-line="238" selection-start-column="4" selection-end-line="238" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp32603/var/www/html/sushe/themes/admin/user/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.214286">
-          <caret line="51" column="33" selection-start-line="47" selection-start-column="26" selection-end-line="51" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp03782/var/www/html/sushe/application/common/model/Orderlist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.189655">
+        <state vertical-scroll-proportion="0.30081302">
           <caret line="137" column="42" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="42" />
           <folding />
         </state>
@@ -984,6 +925,32 @@
             <element signature="n#style#0;n#span#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp32603/var/www/html/sushe/themes/admin/user/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53023255">
+          <caret line="51" column="33" selection-start-line="47" selection-start-column="26" selection-end-line="51" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp36866/var/www/html/sushe/themes/admin/orderlist/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.091057">
+          <caret line="325" column="58" selection-start-line="325" selection-start-column="49" selection-end-line="325" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/jdroom/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.1767442">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>

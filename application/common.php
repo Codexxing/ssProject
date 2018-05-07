@@ -30,6 +30,7 @@ function searchExpressAli($number){
     }
     $re = curl_exec($curl);
     $res = json_decode($re);
+    var_dump($res);
     curl_close($curl);
     return $res;
 }

@@ -26,7 +26,6 @@ class Index extends AdminBase
         $redis = new \Redis();
              //连接
      $redis->connect('127.0.0.1', 6379);
-//        var_dump($redis);
      //检测是否连接成功
      echo "redis Server is running: " . $redis->ping();
 //        $param['order_number']='SH2018042110255101';

@@ -655,9 +655,9 @@ class Tool extends HomeBase{
             $token = Request::instance()->header('token');
             $phone = getOneUserVal(['id'=>$uid],'mobile');
             $v = validateUser('token',$phone,$token);
-            if($v>0){
-                jsonSend(3,'验证信息已失效');exit;
-            }
+//            if($v>0){
+//                jsonSend(3,'验证信息已失效');exit;
+//            }
             $res = searchExpressAli($number);
             $res->status == 0 ?  $data =  $res->result->list : $data ='';
             jsonSend($res->status, $res->msg,$data);

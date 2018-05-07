@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd23b41-091b-4f8f-98a1-51f0443dbab9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/admin/orderlist/detail.html" afterPath="$PROJECT_DIR$/themes/admin/orderlist/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/admin/orderlist/interact.html" afterPath="$PROJECT_DIR$/themes/admin/orderlist/interact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/common.php" afterPath="$PROJECT_DIR$/application/common.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config.php" afterPath="$PROJECT_DIR$/application/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/controller/Tool.php" afterPath="$PROJECT_DIR$/application/index/controller/Tool.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/jdroom/controller/Index.php" afterPath="$PROJECT_DIR$/application/jdroom/controller/Index.php" />
     </list>
     <ignored path="juedoutest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,11 +58,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/jdroom/controller/Index.php">
+      <file leaf-file-name="Demo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/src/Demo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.1767442">
-              <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+            <state vertical-scroll-proportion="-19.0">
+              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tool.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/index/controller/Tool.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.1551723">
+              <caret line="660" column="28" selection-start-line="660" selection-start-column="28" selection-end-line="660" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.648062">
+              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+              <folding>
+                <element signature="n#pdfAddImg#0;n#!!top" expanded="false" />
+                <marker date="1525661191188" expanded="true" signature="3229:3264" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="3300:3338" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="4182:4220" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="8564:8599" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="8640:8693" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="8727:8748" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="8867:8885" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="8968:9006" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="9089:9127" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="9199:9237" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="9609:9647" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="9747:9785" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="9872:9910" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="9966:10004" placeholder="..." />
+                <marker date="1525661191188" expanded="true" signature="10078:10116" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,10 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/scp12260/etc/my.cnf" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp12681/etc/profile" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp51317/var/www/html/sushe/application/index/controller/Tool.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp20734/var/www/html/sushe/public/share.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp18855/var/www/html/sushe/application/config.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp18960/var/www/html/sushe/application/common.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp17898/var/www/html/sushe/application/index/controller/Tool.php" />
@@ -114,7 +158,6 @@
         <option value="$PROJECT_DIR$/themes/admin/base.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp58672/etc/php.ini" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp13784/var/www/html/sushe/application/index/controller/Tool.php" />
-        <option value="$PROJECT_DIR$/application/index/controller/Tool.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp53095/var/www/html/sushe/application/index/controller/Tool.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp57285/var/www/html/sushe/application/jdroom/controller/Whitecompany.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp58660/var/www/html/sushe/themes/admin/whitecompany/edit.html" />
@@ -122,10 +165,15 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp03782/var/www/html/sushe/application/common/model/Orderlist.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp06022/var/www/html/sushe/themes/admin/orderlist/index.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp57385/var/www/html/sushe/application/config.php" />
-        <option value="$PROJECT_DIR$/application/jdroom/controller/Index.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp03296/var/www/html/sushe/application/jdroom/controller/Orderlist.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp36866/var/www/html/sushe/themes/admin/orderlist/detail.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp28196/var/www/html/sushe/themes/admin/orderlist/interact.html" />
+        <option value="$PROJECT_DIR$/application/jdroom/controller/Index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp43898/var/www/html/sushe/application/index/controller/Tool.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/Tool.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp45344/var/www/html/sushe/application/config.php" />
+        <option value="$PROJECT_DIR$/application/config.php" />
+        <option value="$PROJECT_DIR$/application/common.php" />
       </list>
     </option>
   </component>
@@ -282,46 +330,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdroom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdroom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -541,41 +549,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/static/js/Writeletter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.637931">
-          <caret line="246" column="51" selection-start-line="246" selection-start-column="51" selection-end-line="246" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7658915">
-          <caret line="115" column="24" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/js/Tool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.465517">
-          <caret line="488" column="41" selection-start-line="481" selection-start-column="10" selection-end-line="488" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/诉舍分享页/js/sushe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50817233">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/jdroom/controller/Feedback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3534884">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/index/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -837,59 +810,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/src/Demo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3571428">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Tool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2956656">
-          <caret line="575" column="30" selection-start-line="575" selection-start-column="30" selection-end-line="575" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/src/notification/UmengNotification.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.214286">
           <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34728682">
-          <caret line="503" column="9" selection-start-line="503" selection-start-column="9" selection-end-line="503" selection-end-column="9" />
-          <folding>
-            <element signature="n#pdfAddImg#0;n#!!top" expanded="false" />
-            <marker date="1524886960000" expanded="true" signature="3209:3244" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="3280:3318" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="4162:4200" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="8544:8579" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="8620:8673" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="8707:8728" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="8847:8865" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="8948:8986" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="9069:9107" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="9179:9217" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="9589:9627" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="9727:9765" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="9852:9890" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="9946:9984" placeholder="..." />
-            <marker date="1524886960000" expanded="true" signature="10058:10096" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp57385/var/www/html/sushe/application/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7658915">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -951,11 +875,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/release-notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp43898/var/www/html/sushe/application/index/controller/Tool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51869917">
+          <caret line="659" column="13" selection-start-line="659" selection-start-column="13" selection-end-line="659" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp45344/var/www/html/sushe/application/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51869917">
+          <caret line="131" column="4" selection-start-line="131" selection-start-column="4" selection-end-line="133" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Tool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.1551723">
+          <caret line="660" column="28" selection-start-line="660" selection-start-column="28" selection-end-line="660" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/jdroom/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.1767442">
-          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.7069768">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/src/Demo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.0">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8448277">
+          <caret line="134" column="60" selection-start-line="134" selection-start-column="60" selection-end-line="134" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.648062">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding>
+            <element signature="n#pdfAddImg#0;n#!!top" expanded="false" />
+            <marker date="1525661191188" expanded="true" signature="3229:3264" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="3300:3338" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="4182:4220" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="8564:8599" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="8640:8693" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="8727:8748" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="8867:8885" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="8968:9006" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="9089:9127" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="9199:9237" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="9609:9647" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="9747:9785" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="9872:9910" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="9966:10004" placeholder="..." />
+            <marker date="1525661191188" expanded="true" signature="10078:10116" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

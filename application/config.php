@@ -130,9 +130,9 @@ return [
         'reset'    => true
     ],
     //快递信息配置
-    'express_appCode'=>'150a983c45d246f6913cdc2f34dcd46c',
-    'express_appKey'=>'24803712',
-    'express_appSecret'=>'483fb239bd4668183faeb20ae5f71d2b',
+    'express_appCode'=>'409149924c6542ddbb9ca6589ab0f206',
+    'express_appKey'=>'24868634',
+    'express_appSecret'=>'656cbe9618fcd31653fb85ac06aa0244',
 
     //调用e签宝二级域名
     'twoHost'=>'http://api.juedouxin.com',

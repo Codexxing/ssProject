@@ -30,7 +30,8 @@ function searchExpressAli($number){
     }
     $re = curl_exec($curl);
     $res = json_decode($re);
-    var_dump($res);
+   //deliverystatus  物流状态 1 在途中  2 派件中  3 已签收 4派送失败（拒签等）
+    //issign  是否签收（已弃用 请使用deliverystatus）
     curl_close($curl);
     return $res;
 }

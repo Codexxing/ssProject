@@ -203,11 +203,13 @@ class Orderlist extends AdminBase
         if($list['express_number']){//快递单号
             $flag=4;
         }
+        $fvp =Db::name('message')->where(['order_number'=>$order,'status'=>2,'send_type'=>1])->find();
+        $fvp['content'] ? $interact=1 : $interact=0;//;//是否有互动 0没有
         return $this->fetch('detail',['order'=>$order,'list'=>$list,
             'address'=>$address,'files'=>$files,
             'message'=>$message,'is_replenish'=>$is_replenish,
             'layerFile'=>$layerFile,'changeContent'=>$changeContent,
-            'flag'=>$flag
+            'flag'=>$flag,'is_interact'=>$interact
         ]);
     }
     /**
@@ -237,7 +239,9 @@ class Orderlist extends AdminBase
              * 当已经上传了，但正在让用户等待的同时不可点击
              **/
 //            ($list['is_have'] == 1  || $list['is_issue'] == 1) ? $list['uploadBtn'] = 1 : $list['uploadBtn'] = 0;//当用户确认没问题确认发函时不可点
-            ($list['layerIssue'] == 1 ) ? $list['uploadBtn'] = 1 : $list['uploadBtn'] = 0;//当用户确认没问题确认发函时不可点
+            ($list['layerIssue'] == 1 ) ? $list['uploadBtn'] = 1 : $list['uploadBtn'] = 0;//0不可点击  1可点击
+            ($list['is_issue']==0 && $list['layerIssue'] == 1) ?  $list['uploadBtn'] = 1 :  $list['uploadBtn'] = 0;//律师函有问题可点并且资料没问题
+//            ($list['is_issue'] == 0 ) ? $list['uploadBtn'] = 0 : $list['uploadBtn'] = 1;//0不可点击  1可点击
             /**
              * 订单状态
              * 待支付->已支付->待出函->待修改->已出函->待确定->待签字->待发出->已完成
@@ -248,7 +252,7 @@ class Orderlist extends AdminBase
                         $list['orderstatus'] = '已支付';
                         //已支付了 用户是否确认律师函或者正在出涵  或者等待用户确认
                         if($list['layerletter_have'] == 0){//是否已出律师函 0正在出涵  1已出函
-                            $list['orderstatus'] = '正在出涵';
+                            $list['orderstatus'] = '正在出函';
                         }else  if($list['layerletter_have'] == 1){
                             switch($list['is_issue']){//用户对律师函有问题  0有问题  1没问题确认发函  2等待用户确认
                                 case 0:
@@ -316,6 +320,23 @@ class Orderlist extends AdminBase
         $list =Db::name('file_stamp')->where(['order_number'=> input('order')])->find();
         $list['order'] =Db::table('os_order_list')->where(['order_number'=> input('order')])->value('order_number');
         return $this->fetch('upload',['list'=>$list]);
+    }
+    //查看律师与客户的互动消息
+    public function lookinteract(){
+        $order = Request::instance()->param('order');
+        $list =Db::name('message')->where(['order_number'=>$order,'status'=>2])->order('createtime asc')->select();
+        $replenish =Db::name('replenish')->where(['order_number'=>$order])->order('id asc')->select();
+        foreach($replenish as $k=>$v){
+            if($v['url']){
+                $url = explode(',',$v['url']);
+                $replenish[$k]['urls'] = $url;
+            }else{
+                $replenish[$k]['urls'] = '';
+            }
+        }
+//        echo "<pre>";
+//        var_dump($replenish[2]);die;
+        return $this->fetch('interact',['list'=>$list,'replenish'=>$replenish]);
     }
 
 }

@@ -1,0 +1,76 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>诉舍后台系统</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="__JS__/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="__CSS__/font-awesome.min.css">
+    <!--CSS引用-->
+    {block name="css"}{/block}
+    <link rel="stylesheet" href="__CSS__/admin.css">
+    <!--[if lt IE 9]>
+    <script src="__CSS__/html5shiv.min.js"></script>
+    <script src="__CSS__/respond.min.js"></script>
+    <![endif]-->
+</head>
+{block name="body"}
+<div class="layui-body" style="    margin-left: -120px;">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">消息互动</li>
+        </ul>
+        <div class="layui-tab-content" style="    margin-left: -41px;">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="" method="post">
+
+                    {foreach $list as $k=>$v}
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">我：</label>
+                            <div class="layui-inline">
+                                <div class="layui-input-block" style="width:72%;margin-top: -32px;">
+                                    {$v.content}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">用户：</label>
+                            <div class="layui-inline">
+                                <div class="layui-input-block" style="width:72%;    margin-top: 10px;">
+                                    <?php
+                                     if(count($replenish)-1 >=$k){
+                                           echo $replenish[$k]['content'];
+                                        }
+                                    ?>
+                                </div>
+                                    <div class="layui-input-block" style="margin-left: 10px;" id="fileShow2">
+                                        <?php
+                                            if(!empty($v['urls'])){
+                                                foreach($v['urls'] as $kn=>$vn){
+                                        ?>
+                                                    <img src="{$vn}">;
+                                        <?php }   }   ?>
+                                    </div>
+                            </div>
+                        </div>
+                    {/foreach}
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}
+<script>
+    // 定义全局JS变量
+    var GV = {
+        current_controller: "jdroom/{$controller|default=''}/",
+        base_url: "__STATIC__"
+    };
+</script>
+<!--JS引用-->
+<script src="__JS__/jquery.min.js"></script>
+<!--<script src="__JS__/layui/lay/dest/layui.all.js"></script>-->
+<script src="__JS__/layui/layui.all.js"></script>
+<script src="__JS__/admin.js"></script>

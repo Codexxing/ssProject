@@ -13,13 +13,13 @@
         <div class="layui-tab-content">
             <!--未支付状态下页面为只读-->
             {if condition="$list.paystatus eq 0"}
-                <div style="width: 100%;background: transparent;z-index:9999;height: 1900px;position: absolute;"></div>
+                <!--<div style="width: 100%;background: transparent;z-index:9999;height: 1900px;position: absolute;"></div>-->
                 <div style="margin-left:500px;top: 45%;;position: fixed;font-size:48px;color:#ccc;z-index: 999999" id="noOperation">用户支付后可操作</div>
             {elseif condition="$list.auid eq 0"}
-                <div style="width: 100%;background: transparent;z-index:9999;height: 1900px;position: absolute;"></div>
+                <!--<div style="width: 100%;background: transparent;z-index:9999;height: 1900px;position: absolute;"></div>-->
                 <div style="margin-left:500px;top: 45%;;position: fixed;font-size:48px;color:#ccc;z-index: 999999" >本人接单后可操作</div>
             {elseif condition="$list.is_complete eq 2"}
-                <div style="width: 100%;background: transparent;z-index:9999;height: 800px;position: absolute;"></div>
+                <!--<div style="width: 100%;background: transparent;z-index:9999;height: 800px;position: absolute;"></div>-->
                 <div style="margin-left:500px;top: 45%;;position: fixed;font-size:48px;color:#ccc;z-index: 999999" >订单已被取消</div>
             {/if}
             <input type="hidden" id="positionFlag" value="{$flag}">
@@ -155,7 +155,7 @@
                                 </div>
                                 <label class="layui-form-label">收函地址：</label>
                                 <div class="layui-input-inline">
-                                    <input type="text" value="{$address.accept_address}" autocomplete="off" class="layui-input">
+                                    <input type="text" style="width: 600px;" value="{$address.accept_address}" autocomplete="off" class="layui-input">
                                 </div>
                             </div>
                             <div class="layui-form-item">
@@ -192,7 +192,7 @@
                                 </div>
                                 <label class="layui-form-label">发函地址：</label>
                                 <div class="layui-input-inline" style="    width: 50%;">
-                                    <input type="text" value="{$address.send_address}" autocomplete="off" class="layui-input">
+                                    <input type="text" style="width: 600px;" value="{$address.send_address}" autocomplete="off" class="layui-input">
                                 </div>
                             </div>
                             <div class="layui-form-item">
@@ -232,21 +232,21 @@
                             <div class="layui-form-item" style="margin-left: 60px;">
                                 <div class="layui-input-inline">
                                     {if condition="$list.layerIssue eq 3"}
-                                        <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;background: rgba(102, 204, 0, 1);color: white;"  onclick="fileVerify(this,'{$order}',0,'{$list.uid}');">资料有误</button>
+                                        <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;background: rgba(102, 204, 0, 1);color: white;"  onclick="fileVerify(this,'{$order}',0,'{$list.uid}');">资料有问题</button>
                                     {else /}
-                                        <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;background: rgba(102, 204, 0, 1);color: white;" >资料有误</button>
+                                        <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;background: rgba(102, 204, 0, 1);color: white;" >资料有问题</button>
                                     {/if}
                                 </div>
                                 <div class="layui-input-inline">
                                     {if condition="$list.layerIssue eq 3"}
-                                        <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;border-color: rgba(102, 204, 0, 1); " onclick="fileVerify(this,'{$order}',1,'{$list.uid}');">资料确认</button>
+                                        <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;border-color: rgba(102, 204, 0, 1); " onclick="fileVerify(this,'{$order}',1,'{$list.uid}');">资料没有问题</button>
                                     {else /}
-                                        <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;border-color: rgba(102, 204, 0, 1); " >资料确认</button>
+                                        <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;border-color: rgba(102, 204, 0, 1); " >资料没有问题</button>
                                     {/if}
                                 </div>
-                                {notempty name="is_replenish"}
-                                    <button class="layui-btn layui-btn-radius" style="float: right;border-color: rgba(102, 204, 0, 1); " >查看互动</button>
-                                {/notempty}
+                                {if condition="$is_interact eq 1"}
+                                    <button class="layui-btn layui-btn-radius" style="float: right;border-color: rgba(102, 204, 0, 1); " onclick="lookinteract('{$order}')">查看互动</button>
+                                {/if}
                             </div>
                         </div>
                     </div>
@@ -460,13 +460,21 @@
     //定位到某位置
 
     var flag = $('#positionFlag').val();
-//    alert(flag);
     window.location.hash='#flag'+flag;
-    if('{$list.paystatus}'==0 || '{$list.is_complete}'==1|| '{$list.is_complete}'==2){
+    if('{$list.paystatus}'==0 || '{$list.is_complete}'==1|| '{$list.is_complete}'==2|| '{$list.auid}'==0){
         $('.layui-colla-content').addClass(' layui-show');
+        $('button').attr('disabled',true);
+        $('button').attr('class','layui-btn layui-btn-disabled layui-btn-radius');
     }
-//    $('.scroll_top').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
-//  $('html,body').animate({scrollTop:$('#flag'+flag).offset().top}, 800);};
-//    $('.scroll_bottom').click(function(){$('html,body').animate({scrollTop:$('.bottom').offset().top}, 800);});
+    function lookinteract(order){
+        layer.open({
+            title:'互动消息',
+            area: ['700px', '700px'],//宽高
+            type: 2,
+            anim: 4,
+            content: ['/jdroom/Orderlist/lookinteract?order='+order,'no']
+        });
+    }
+
 </script>
 {/block}

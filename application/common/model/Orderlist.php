@@ -133,7 +133,14 @@ class Orderlist extends Model{
         foreach ($ask['data'] as  $key => $val) {
             $hash = $val['signServiceId'];
             $acccept = Db::name('address')->where(['order_number' => $val["order_number"]])->field('accept_name,send_name')->find(); //根据ID查询相关其他信息
+            $uid = Db::table('os_order_list')->where(['order_number' => $val["order_number"]])->value('uid'); //根据ID查询相关其他信息
 //            $ask['data'][$key]['accept_name'] = wordwrap(iconv("GB2312", "UTF-8", ), 8, "\n", true);
+            $user = getUserVal(['id'=>$uid],'id,mobile,usertype,userauth');
+//            $ask['data'][$key]['mobile'] =getOneUserVal(['id'=>$uid],'mobile');
+            $ask['data'][$key]['user'] =$user;
+//            $ask['data'][$key]['usertype'] =$user['usertype'];
+//            $ask['data'][$key]['userauth'] =$user['userauth'];
+
             $ask['data'][$key]['accept_name'] = $acccept['accept_name'];
             $ask['data'][$key]['accept_name_s'] = msubstr($acccept['accept_name'],0,3);
             $ask['data'][$key]['send_name'] = $acccept['send_name'];
@@ -184,42 +191,46 @@ class Orderlist extends Model{
             **/
             switch($val['is_complete']){
                 case 0://未完成
-                    if($val['paystatus']==1){
-                        //已支付了 用户是否确认律师函或者正在出涵  或者等待用户确认
-                        if($val['layerletter_have'] == 0){//是否已出律师函 0正在出涵  1已出函
-                            $ask['data'][$key]['orderstatus'] = '正在出涵';
-                        }else  if($val['layerletter_have'] == 1){
-                            switch($val['is_issue']){//用户对律师函有问题  0有问题  1没问题确认发函  2等待用户确认
-                                case 0:
-                                    $ask['data'][$key]['orderstatus'] = '律师函待修改';
-                                    break;
-                                case 1:
-                                    if($val['signServiceId'])
-                                        $ask['data'][$key]['orderstatus'] = '准备发函';
-                                    else
-                                        $ask['data'][$key]['orderstatus'] = '待用户签字';
-                                    break;
-                                case 2:
-                                    $ask['data'][$key]['orderstatus'] = '待用户确认';
-                                    break;
-                            }
-                        }else  if($val['layerletter_have'] == 2){//还没有进行到律师函步骤
-                            if($val['layerIssue']==1){
-                                $ask['data'][$key]['orderstatus'] = '准备出函';
-                            }else if($val['layerIssue'] == 0){
-                                $ask['data'][$key]['orderstatus'] = '待用户补充需求';
-                            }else if($val['layerIssue'] == 3 ){
-                                $ask['data'][$key]['orderstatus'] = '需资料审核';
-                            }
-                        }else{
-                            if($val['auid'] == 0){
-                                $ask['data'][$key]['orderstatus'] = '已支付待接单';
+                    if($val['auid'] == 0){
+                        $ask['data'][$key]['orderstatus'] = '待接单';
+                    }else {
+                        if ($val['paystatus'] == 1) {
+                            //已支付了 用户是否确认律师函或者正在出涵  或者等待用户确认
+                            if ($val['layerletter_have'] == 0) {//是否已出律师函 0正在出涵  1已出函
+                                $ask['data'][$key]['orderstatus'] = '正在出函';
+                            } else if ($val['layerletter_have'] == 1) {
+                                switch ($val['is_issue']) {//用户对律师函有问题  0有问题  1没问题确认发函  2等待用户确认
+                                    case 0:
+                                        $ask['data'][$key]['orderstatus'] = '律师函待修改';
+                                        break;
+                                    case 1:
+                                        if ($val['signServiceId'])
+                                            $ask['data'][$key]['orderstatus'] = '准备发函';
+                                        else
+                                            $ask['data'][$key]['orderstatus'] = '待用户签字';
+                                        break;
+                                    case 2:
+                                        $ask['data'][$key]['orderstatus'] = '待用户确认';
+                                        break;
+                                }
+                            } else if ($val['layerletter_have'] == 2) {//还没有进行到律师函步骤
+                                if ($val['layerIssue'] == 1) {
+                                    $ask['data'][$key]['orderstatus'] = '准备出函';
+                                } else if ($val['layerIssue'] == 0) {
+                                    $ask['data'][$key]['orderstatus'] = '待用户补充需求';
+                                } else if ($val['layerIssue'] == 3) {
+                                    $ask['data'][$key]['orderstatus'] = '需资料审核';
+                                }
+                            } else {
+                                if ($val['auid'] == 0) {
+                                    $ask['data'][$key]['orderstatus'] = '已支付待接单';
+                                }
+
                             }
 
+                        } else if ($val['paystatus'] == 0) {
+                            $ask['data'][$key]['orderstatus'] = '待支付';
                         }
-
-                    }else if($val['paystatus']==0){
-                        $ask['data'][$key]['orderstatus'] = '待支付';
                     }
                     break;
                 case 1://已完成

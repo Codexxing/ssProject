@@ -29,7 +29,7 @@
                     <div class="layui-inline">
                         <label class="layui-form-label">关键词</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="keyword" value="{$keyword}" required placeholder="请输入订单号或用户姓名" class="layui-input">
+                            <input type="text" name="keyword" value="{$keyword}" required placeholder="请输入订单号" style="width: 230px;" class="layui-input">
                             <input type="hidden" name="paystatus" value="{$paystatus}" class="layui-input">
                         </div>
                     </div>
@@ -86,6 +86,7 @@
                         <tr>
                             <th style="width: 30px;">ID</th>
                             <th>订单号</th>
+                            <th>用户</th>
                             <th>收函对象</th>
                             <th>发函对象</th>
                             <th>需求描述</th>
@@ -93,7 +94,7 @@
                             <!--<th>查看详情</th>-->
                             <th>订单状态</th>
                             <th>时间</th>
-                            <th>上传下载(发票/律师函)</th>
+                            <!--<th>上传下载(发票/律师函)</th>-->
                             <th>操作</th>
                         </tr>
                     </thead>
@@ -102,6 +103,13 @@
                     <tr>
                         <td>{$vo.id}</td>
                         <td><a class="tixingfont" title="查看详情" target="_blank" href="/jdroom/Orderlist/detail?order={$vo.order_number}">{$vo.order_number}</a></td>
+                        <td>
+                            {if condition="$vo.user.userauth eq 1"}
+                                <span style="cursor: pointer;color: rgb(51,204,255);" title="点击查看认证信息" onclick="showCompanyInfo('{$vo.user.id}','{$vo.user.usertype}')">{$vo.user.mobile}</span>
+                            {else /}
+                                <a title="未认证">{$vo.user.mobile}</a>
+                            {/if}
+                        </td>
                         <td><a title="{$vo.accept_name}" style="cursor: pointer;">{$vo.accept_name_s}</a></td>
                         <td><a title="{$vo.send_name}" style="cursor: pointer;">{$vo.send_name_s}</a></td>
                         <td><a  class="tixingfont" style="cursor: pointer;" onclick="lookContent('{$vo.order_number}')">需求描述</a></td>
@@ -110,15 +118,16 @@
                         <td><span style="color: red;">{$vo.orderstatus}</span></td>
 
                         <td>{$vo.createtime}<br>{$vo.updatetime}</td>
-                        <td>
-                            {notempty name="vo.signServiceId"}
-                                <span id="uploadDown" attr-order="{$vo.order_number}" style="cursor: pointer;">上传/下载</span>
-                            {else /}
-                                <span attr-order="{$vo.order_number}" style="cursor: pointer;">用户签署后上传</span>
-                            {/notempty}
-                        </td>
+
                         <td>
                             {if condition="$vo.is_complete eq 0"}
+                                {notempty name="vo.signServiceId"}
+                                <!--<span id="uploadDown" attr-order="{$vo.order_number}" style="cursor: pointer;"><i class="layui-icon">&#xe62f;</i></span>-->
+                                    <button id="uploadDown"  class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;" attr-order="{$vo.order_number}" title="发票/律师函上传下载"><i class="layui-icon">&#xe62f;</i></button>
+                                {else /}
+                                <!--<span attr-order="{$vo.order_number}" style="cursor: pointer;"><i class="layui-icon">&#xe62f;</i></span>-->
+                                    <button class="layui-btn layui-btn-disabled layui-btn-radius" style="float: right;"  title="发票/律师函上传下载"><i class="layui-icon">&#xe62f;</i></button>
+                                {/notempty}
                                 {if condition="$vo.iscancle eq 1"}
                                     <!--<button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;;margin-right: 22%;margin-left: 10px;" onclick="cancleOrder(this,'{$vo.order_number}',0)">取消订单</button>-->
                                     <button class="layui-btn layui-btn-primary layui-btn-radius" style="float: right;margin-left: 10px;" onclick="cancleOrder(this,'{$vo.order_number}',0)" title="取消订单"><i class="layui-icon">&#xe640;</i></button>

@@ -2,7 +2,722 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd23b41-091b-4f8f-98a1-51f0443dbab9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/common.php" afterPath="$PROJECT_DIR$/application/common.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/AlipayMobilePublicMultiMediaClient.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/AlipayMobilePublicMultiMediaExecute.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/AopClient.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/AopEncrypt.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/EncryptParseItem.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/EncryptResponseData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/SignData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAccountExrateAdviceAcceptRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAccountExrateAllclientrateQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAccountExrateRatequeryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAccountExrateTraderequestCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAcquireCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAcquireCloseRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAcquireCreateandpayRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAcquirePrecreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAcquireQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAcquireRefundRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAppTokenGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAssetPointBalanceQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAssetPointBudgetQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAssetPointOrderCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayAssetPointOrderQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayBossCsChannelQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayBossFncXwbtestRetModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayBossProdArrangementOfflineQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceAirXfgDsgModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorCityQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorDepositCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorDepositConfirmRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorDepositQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorFunctionQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorScriptQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorStationQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorVoucherBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorVoucherCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorVoucherConfirmRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorVoucherGenerateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorVoucherQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorVoucherRefundRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceCityfacilitatorVoucherUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceDataMonitordataSyncRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceEducateStudentinfoShareRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceIotDeviceserviceCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceLotteryPresentSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceLotteryPresentlistQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceLotteryTypelistQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceTransportOfflinepayKeyQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceTransportOfflinepayRecordVerifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayCommerceTransportOfflinepayUserblacklistQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDaoweiOrderCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDaoweiOrderConfirmRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDaoweiOrderModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDaoweiOrderQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDaoweiOrderRefundRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDaoweiOrderRefuseRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDaoweiOrderSpModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDaoweiOrderTransferRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDaoweiServiceModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDaoweiServicePriceModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDaoweiSpModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDaoweiSpScheduleModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDataBillDownloadurlGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDataDataexchangeSfasdfRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDataDataserviceBillDownloadurlQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDataDataserviceChinaremodelQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDataDataserviceCodeRecoRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDataDataserviceSdfsdfRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDataDataserviceShoppingmallrecShopQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDataDataserviceShoppingmallrecVoucherQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayDataDataserviceUserlevelZrankGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppBillAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppBillGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppBillSearchRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppInvoiceInfoSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppInvoiceMerchantlistEnterApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppInvoiceTitleListGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppMerchantConfigGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppPdeductBillPayStatusRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppPdeductPayRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppPdeductSignAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppPdeductSignCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppPdeductSignQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEbppPdeductSignValidateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcapiprodCreditGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcapiprodDataPutRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcapiprodDrawndnContractGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcapiprodDrawndnDrawndnlistQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcapiprodDrawndnFeerecordQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcapiprodDrawndnLendingrecordQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcapiprodDrawndnPaymentscheduleGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcapiprodDrawndnRepaymentrecordQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcardEduPublicBindRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeBasicserviceInitializeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeBasicserviceModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeBillBatchUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeBillBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeBillDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeBillModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeBillSyncRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeCommunityBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeCommunityCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeCommunityDetailsQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeCommunityModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeNoticeDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeNoticePublishRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifePayResultQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeRepairStatusUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeResidentinfoDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeResidentinfoUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeRoominfoDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeRoominfoQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeRoominfoUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeRooominfoQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoCplifeUseridentityStatusUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoEduKtBillingModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoEduKtBillingQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoEduKtBillingSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoEduKtSchoolinfoModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoEduKtStudentModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoEduKtStudentQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarCarlibInfoPushRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarCarmodelModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarDataExternalQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarDataExternalSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarDataserviceViolationinfoShareRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarMaintainDataUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarMaintainOrderCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarMaintainOrderstatusUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarOrderStatusQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarParkingCardbarcodeCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarParkingConfigQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarParkingConfigSetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarParkingEnterinfoSyncRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarParkingExitinfoSyncRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarParkingLotbarcodeCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarParkingOrderSyncRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarParkingOrderUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarParkingOrderstatusQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarParkingParkinglotinfoCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarParkingParkinglotinfoUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarParkingVehicleQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarPromoTicketPushRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarPromoTicketSyncRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarPromoVoucherVerifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarTradeRefundRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarViolationCityPushRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoMycarViolationInfoPushRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayEcoWelfareCodeSyncRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayExscUserCurrentsignGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayExscUserFirstfundinpourGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayExscUserFirstsignGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFlashsalesStockSyncUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundAuthOperationCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundAuthOperationDetailQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundAuthOrderFreezeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundAuthOrderUnfreezeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundAuthOrderVoucherCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundCouponOperationQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundCouponOrderAgreementPayRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundCouponOrderAppPayRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundCouponOrderDisburseRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundCouponOrderPagePayRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundCouponOrderRefundRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundTransOrderQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayFundTransToaccountTransferRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsAutoAutoinsprodCommonConsultRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsAutoAutoinsprodEnquriyApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsAutoAutoinsprodPolicyApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsAutoAutoinsprodPolicyCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsAutoAutoinsprodQuoteApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsAutoAutoinsprodQuoteQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsAutoAutoinsprodUserCertifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsAutoCarSaveRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsCooperationProductOfflineBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsCooperationProductQrcodeApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsCooperationRegionQrcodeApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsSceneApplicationIssueConfirmRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsSceneCouponReceiveRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayInsSceneCouponSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignActivityOfflineCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignActivityOfflineTriggerRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignCashCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignCashDetailQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignCashListQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignCashStatusModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignCashTriggerRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignCertCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDiscountBudgetAppendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDiscountBudgetCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDiscountBudgetQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDiscountOperateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDiscountQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDiscountStatusUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDiscountWhitelistQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDiscountWhitelistUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDrawcampCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDrawcampQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDrawcampStatusUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDrawcampUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignDrawcampWhitelistCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCampaignPrizeAmountQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardActivateformQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardActivateurlApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardBenefitCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardBenefitDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardBenefitModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardBenefitQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardConsumeSyncRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardFormtemplateSetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardOpenRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardTemplateCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardTemplateModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardTemplateQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCardUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCashlessvoucherTemplateCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCashlessvoucherTemplateModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCashvoucherTemplateCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCashvoucherTemplateModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCdpAdvertiseCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCdpAdvertiseModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCdpAdvertiseOperateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCdpAdvertiseQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCdpAdvertiseReportQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingCdpRecommendQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingExchangevoucherUseRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieActivityCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieActivityQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieEditorQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieMemberCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieSitesBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieSitesConfirmRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieSitesCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieSitesDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieSitesQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieSitesSyncRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieSpaceBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieSpaceCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieSpaceQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieTemplateBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieTemplateQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingToolFengdieTemplateSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingUserulePidQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingVoucherAuthSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingVoucherConfirmRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingVoucherListQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingVoucherQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingVoucherSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingVoucherStockUseRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingVoucherTemplateDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingVoucherTemplatedetailQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMarketingVoucherTemplatelistQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMdataTagGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMemberCouponQuerylistRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMicropayOrderConfirmpayurlGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMicropayOrderDirectPayRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMicropayOrderFreezeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMicropayOrderFreezepayurlGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMicropayOrderGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMicropayOrderUnfreezeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileBeaconDeviceAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileBeaconDeviceDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileBeaconDeviceModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileBeaconDeviceQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileBeaconMessageSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileBksigntokenVerifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileCodeCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileCodeQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicAccountAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicAccountDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicAccountQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicAccountResetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicAppinfoUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicContactFollowListRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicFollowListRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicGisGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicInfoModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicInfoQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicLabelAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicLabelDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicLabelQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicLabelUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicLabelUserAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicLabelUserDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicLabelUserQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMenuAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMenuDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMenuGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMenuQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMenuUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMenuUserQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMenuUserUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMessageCustomSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMessageLabelSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMessagePushRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMessageSingleSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMessageTotalSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMessagebatchPushRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicMessagespecifyPushRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicQrcodeCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicShortlinkCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicTemplateMessageDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicTemplateMessageGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicTemplateMessageModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobilePublicTemplateMessageQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileRecommendGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileShakeUserQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileStdPublicAccountQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileStdPublicExpressUserQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileStdPublicFollowListRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileStdPublicMenuQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMobileStdPublicMessageCustomSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMpointprodBenefitDetailGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMsaasMediarecogVoiceMediaaudioUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayMsaasPromotionCpainfoCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketApplyorderBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketItemCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketItemModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketItemStateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketMcommentQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketProductBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketProductQuerydetailRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketReporterrorCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketShopApplyorderCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketShopBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketShopCategoryQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketShopCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketShopDiscountQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketShopModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketShopPublicBindRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketShopPublicUnbindRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketShopQuerydetailRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketShopSummaryBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketingVoucherCodeUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketingVoucherCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketingVoucherModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketingVoucherOfflineRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketingVoucherStatusQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMarketingVoucherUseRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMaterialImageDownloadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineMaterialImageUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineProviderDishQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineProviderEquipmentAuthQuerybypageRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineProviderEquipmentAuthRemoveRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineProviderMonitorLogSyncRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineProviderShopactionRecordRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOfflineProviderUseractionRecordRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAgentCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAgentConfirmRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAgentCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAgentFacetofaceSignRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAgentMiniCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAgentMobilepaySignRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAgentOrderQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAgentZhimabriefSignRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAppCodetesttestRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAppLingjiuyisiCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAppLingjiuyiwuBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAppMembersCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAppMembersDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAppMembersQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAppMiniTemplatemessageSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAppNotifyVerifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAppQrcodeCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAppXwbtestabcQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAppYiyiyiwuQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAppYufanlingsanyaowuYufalingsanyaowuQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAuthIndustryPlatformCreateTokenRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAuthTokenAppQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenAuthTokenAppRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniBaseinfoModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniBaseinfoQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniExperienceCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniExperienceCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniExperienceQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniSafedomainCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniSafedomainDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniTemplateUsageQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniVersionAuditApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniVersionAuditedCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniVersionBuildQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniVersionDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniVersionDetailQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniVersionGrayCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniVersionGrayOnlineRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniVersionListQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniVersionOfflineRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniVersionOnlineRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniVersionRollbackRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenMiniVersionUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicAccountCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicAccountDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicAccountQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicAccountResetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicAdvertBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicAdvertCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicAdvertDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicAdvertModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicArticlesummaryDataBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicContactFollowBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicDefaultExtensionCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicFollowBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicGisQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicGroupBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicGroupCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicGroupCrowdQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicGroupDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicGroupModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicInfoModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicInfoQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLabelCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLabelDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLabelModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLabelQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLabelUserCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLabelUserDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLabelUserQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeAboardApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeAccountCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeAgentCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeAgentcreateQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeDebarkApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeLabelBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeLabelCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeLabelDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeLabelModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeMsgRecallRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicLifeMsgSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMatchuserLabelCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMatchuserLabelDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMenuBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMenuCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMenuDataBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMenuModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMenuQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMessageContentCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMessageContentModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMessageCustomSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMessageGroupSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMessageLabelSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMessageQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMessageSingleSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMessageTotalSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicMultimediaDownloadProxyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicPartnerMenuOperateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicPartnerMenuQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicPartnerSubscribeSyncRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicPersonalizedExtensionBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicPersonalizedExtensionCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicPersonalizedExtensionDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicPersonalizedExtensionSetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicPersonalizedMenuCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicPersonalizedMenuDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicQrcodeCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicSettingCategoryQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicShortlinkCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicSinglearticleDataBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicTemplateMessageGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicTemplateMessageIndustryModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicThirdCustomerServiceRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicTopicBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicTopicCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicTopicDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicTopicModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicUserDataBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicUserFollowQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenPublicXwbtestabcdBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenServicemarketCommodityShopOfflineRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenServicemarketCommodityShopOnlineRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenServicemarketOrderAcceptRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenServicemarketOrderItemCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenServicemarketOrderItemCompleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenServicemarketOrderItemConfirmRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenServicemarketOrderNotifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenServicemarketOrderQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOpenServicemarketOrderRejectRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayOperatorMobileBindRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassCodeAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassCodeVerifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassFileAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassInstanceAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassInstanceUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassSyncAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassSyncUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassTemplateAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassTemplateUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassTplAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassTplContentAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassTplContentUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassTplUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPassVerifyQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPcreditHuabeiPromoQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPcreditLoanApplyCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPcreditLoanRefundCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPlatformOpenidGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPlatformUseridGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPointBalanceGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPointBudgetGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPointOrderAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPointOrderGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayPromorulecenterRuleAnalyzeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityInfoAnalysisRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdAlipaySecurityProdTestRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdAmlriskQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdFacerepoAddRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdFacerepoSearchRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdFingerprintApplyInitializeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdFingerprintApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdFingerprintDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdFingerprintRiskcontrolQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdFingerprintVerifyInitializeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdFingerprintVerifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdSignatureFileUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdSignatureTaskApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdSignatureTaskCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdSignatureTaskQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityProdXwbtestabcAbcQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityRiskDetectRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityRiskHideDeviceidQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySecurityRiskRainscoreQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipaySystemOauthTokenRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradeAppPayRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradeCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradeCloseRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradeCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradeCustomsDeclareRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradeCustomsQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradeFastpayRefundQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradeOrderSettleRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradePagePayRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradePayRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradePrecreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradeQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradeRefundRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradeVendorpayDevicedataUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTradeWapPayRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTransferThirdpartyBillCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTrustUserAuthSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTrustUserReportGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTrustUserRiskidentifyGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTrustUserScoreGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayTrustUserTokenGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserAccountFreezeGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserAccountGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserAccountSearchRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserAccountUseridBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserAddressQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserAuthZhimaorgIdentityApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserContractGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserFinanceinfoShareRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserInfoAuthRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserInfoShareRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserTestRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserTradeSearchRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayUserUserinfoShareRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayZdataassetsEasyserviceRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayZdataassetsFcdatalabZdatamergetaskRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayZdataassetsMetadataRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayZdatafrontCommonQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayZdatafrontDatatransferedFileuploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayZdatafrontDatatransferedSendRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayZdataserviceUnidataQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AlipayZmscoreZrankGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AntMerchantExpandContractFacetofaceQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AntMerchantExpandContractFacetofaceSignRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AntMerchantExpandEnterpriseApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AntMerchantExpandImageUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AntMerchantExpandMapplyorderQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AntMerchantExpandMerchantStorelistQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/AntMerchantExpandPersonalApplyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiCateringTablecodeQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiCateringTablelistQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiCraftsmanDataProviderBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiCraftsmanDataProviderCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiCraftsmanDataProviderModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiCraftsmanDataWorkBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiCraftsmanDataWorkCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiCraftsmanDataWorkDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiCraftsmanDataWorkModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiItemBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiItemCategoryChildrenBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiItemCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiItemExtitemBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiItemExtitemBrandQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiItemExtitemCategoryQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiItemExtitemCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiItemExtitemExistedQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiItemExtitemQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiItemExtitemUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiItemModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiItemStateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignActivityBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignActivityCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignActivityModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignActivityOfflineRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignActivityQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignAssetDetailQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignCrowdBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignCrowdCountRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignCrowdCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignCrowdDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignCrowdDetailQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignCrowdModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignDetailInfoQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignIntelligentPromoBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignIntelligentPromoConsultRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignIntelligentPromoCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignIntelligentPromoDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignIntelligentPromoModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignIntelligentPromoQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignIntelligentShopConsultRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignIntelligentTemplateConsultRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignRecruitApplyQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignRecruitShopQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignTagsQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingCampaignUserAssetQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataActivityBillDownloadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataActivityReportQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataAlisisReportBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataAlisisReportQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataBizadviserMemberprofileQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataBizadviserMyddsreportQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataBizadviserMyreportQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataCustomreportBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataCustomreportDeleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataCustomreportDetailQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataCustomreportQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataCustomreportSaveRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataDishdiagnoseBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataDishdiagnosetypeBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataEnterpriseStaffinfoUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataIndicatorQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataIntelligentEffectQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataIntelligentIndicatorQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataIsvShopQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataMemberReportQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataMessageDeliverRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataRetailDmQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataSmartactivityConfigRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataSmartactivityForecastRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataSmartmanagementDiagnoseRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingDataTradeHabbitQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingToolIsvMerchantQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingToolPointsQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingToolPointsUpdateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMarketingToolPrizesendAuthRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMemberBrandownerNameQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMemberDataOauthQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiMemberRetailerQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiQualityTestCloudacptActivityQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiQualityTestCloudacptBatchQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiQualityTestCloudacptCheckresultSubmitRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiQualityTestCloudacptItemQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiRetailShopitemBatchqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiRetailShopitemModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiRetailShopitemUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiTradeItemBuyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiTradeOrderConsultRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiTradeOrderQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiTradeTicketTicketcodeQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/KoubeiTradeTicketTicketcodeUseRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/MonitorHeartbeatSynRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/MybankCreditLoanapplyDataUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/MybankFinanceYulibaoAccountQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/MybankFinanceYulibaoCapitalPurchaseRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/MybankFinanceYulibaoCapitalRansomRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/MybankFinanceYulibaoPriceQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/MybankFinanceYulibaoTransHistoryQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/SsdataDataserviceRiskAlixiaohaoQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/SsdataDataserviceRiskAntifraudVerifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/SsdataDataserviceRiskAntifraudintegrationQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/SsdataDataserviceRiskAntifraudlistQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/SsdataDataserviceRiskAntifraudscoreQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/SsdataDataserviceRiskRainscoreQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaAuthInfoAuthqueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditAntifraudRiskListRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditAntifraudScoreGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditAntifraudVerifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditEpInfoGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditEpLawsuitDetailGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditEpLawsuitRecordGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditEpScoreGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditPeLawsuitDetailQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditPeLawsuitRecordGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditScoreBriefGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditScoreGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditWatchlistBriefGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCreditWatchlistiiGetRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCustomerCertificationCertifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCustomerCertificationInitializeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCustomerCertificationMaterialCertifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCustomerCertificationQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCustomerContractInitializeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCustomerEpCertificationCertifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCustomerEpCertificationInitializeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaCustomerEpCertificationQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaDataBatchFeedbackRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaDataFeedbackurlQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaMerchantBorrowEntityUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaMerchantCloseloopDataUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaMerchantDataUploadInitializeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaMerchantOrderRentCancelRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaMerchantOrderRentCompleteRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaMerchantOrderRentCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaMerchantOrderRentModifyRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaMerchantOrderRentQueryRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaMerchantSingleDataUploadRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaMerchantTestPracticeRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/request/ZhimaOpenAppKeyanLqlCreateRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/zfbpay/aop--/test/TestImage.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/jdroom/controller/Index.php" afterPath="$PROJECT_DIR$/application/jdroom/controller/Index.php" />
     </list>
     <ignored path="juedoutest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,57 +771,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Demo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/src/Demo.php">
+        <entry file="file://$PROJECT_DIR$/vendor/phonepush/Demo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.0">
-              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tool.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/controller/Tool.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.1551723">
-              <caret line="660" column="28" selection-start-line="660" selection-start-column="28" selection-end-line="660" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/common.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7658915">
-              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+            <state vertical-scroll-proportion="-5.8965516">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="38" />
               <folding>
-                <element signature="n#pdfAddImg#0;n#!!top" expanded="false" />
-                <marker date="1525661405375" expanded="true" signature="3308:3343" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="3379:3417" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="4261:4299" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="8643:8678" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="8719:8772" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="8806:8827" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="8946:8964" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="9047:9085" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="9168:9206" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="9278:9316" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="9688:9726" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="9826:9864" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="9951:9989" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="10045:10083" placeholder="..." />
-                <marker date="1525661405375" expanded="true" signature="10157:10195" placeholder="..." />
+                <element signature="e#1078#2139#0#PHP" expanded="false" />
+                <element signature="e#2142#3293#0#PHP" expanded="false" />
+                <element signature="e#3296#4300#0#PHP" expanded="false" />
+                <element signature="e#4303#5905#0#PHP" expanded="false" />
+                <element signature="e#5908#7192#0#PHP" expanded="false" />
+                <element signature="e#7195#8379#0#PHP" expanded="false" />
+                <element signature="e#8525#9380#0#PHP" expanded="false" />
+                <element signature="e#10353#11324#0#PHP" expanded="false" />
+                <element signature="e#11371#12641#0#PHP" expanded="false" />
+                <element signature="e#12710#13939#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/README">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/jdroom/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.53023255">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -120,8 +809,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/scp18855/var/www/html/sushe/application/config.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp18960/var/www/html/sushe/application/common.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp17898/var/www/html/sushe/application/index/controller/Tool.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp54068/etc/httpd/conf.d/test.juedouxin.com.conf" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp59500/etc/httpd/conf/httpd.conf" />
@@ -165,12 +852,14 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp03296/var/www/html/sushe/application/jdroom/controller/Orderlist.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp36866/var/www/html/sushe/themes/admin/orderlist/detail.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp28196/var/www/html/sushe/themes/admin/orderlist/interact.html" />
-        <option value="$PROJECT_DIR$/application/jdroom/controller/Index.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp43898/var/www/html/sushe/application/index/controller/Tool.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Tool.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp45344/var/www/html/sushe/application/config.php" />
         <option value="$PROJECT_DIR$/application/config.php" />
         <option value="$PROJECT_DIR$/application/common.php" />
+        <option value="$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/src/Demo.php" />
+        <option value="$PROJECT_DIR$/vendor/phonepush/Demo.php" />
+        <option value="$PROJECT_DIR$/application/jdroom/controller/Index.php" />
       </list>
     </option>
   </component>
@@ -256,63 +945,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thinkphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="runtime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="extend" />
+              <option name="myItemId" value="phonepush" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -327,134 +964,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sushe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -546,13 +1055,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/static/index/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/shareco.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-149.28572">
@@ -815,75 +1317,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp03782/var/www/html/sushe/application/common/model/Orderlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30081302">
-          <caret line="137" column="42" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp06022/var/www/html/sushe/themes/admin/orderlist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58914727">
-          <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp32603/var/www/html/sushe/themes/admin/user/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53023255">
-          <caret line="51" column="33" selection-start-line="47" selection-start-column="26" selection-end-line="51" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp03296/var/www/html/sushe/application/jdroom/controller/Orderlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.465517">
-          <caret line="211" column="50" selection-start-line="211" selection-start-column="41" selection-end-line="211" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp36866/var/www/html/sushe/themes/admin/orderlist/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76434106">
-          <caret line="469" column="44" selection-start-line="469" selection-start-column="44" selection-end-line="469" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp28196/var/www/html/sushe/themes/admin/orderlist/interact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.296124">
-          <caret line="46" column="74" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/release-notes">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -904,30 +1341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Tool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.1551723">
-          <caret line="660" column="28" selection-start-line="660" selection-start-column="28" selection-end-line="660" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/jdroom/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7069768">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/src/Demo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.0">
-          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.8448277">
@@ -936,10 +1349,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73402673">
+          <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7658915">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        <state vertical-scroll-proportion="-14.928572">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
           <folding>
             <element signature="n#pdfAddImg#0;n#!!top" expanded="false" />
             <marker date="1525661405375" expanded="true" signature="3308:3343" placeholder="..." />
@@ -958,6 +1379,96 @@
             <marker date="1525661405375" expanded="true" signature="10045:10083" placeholder="..." />
             <marker date="1525661405375" expanded="true" signature="10157:10195" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zfbpay/AopSdk.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.648062">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zfbpay/aop/AopClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23565891">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/src/Demo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53023255">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding>
+            <element signature="e#1128#2189#0#PHP" expanded="false" />
+            <element signature="e#2192#3343#0#PHP" expanded="false" />
+            <element signature="e#3346#4350#0#PHP" expanded="false" />
+            <element signature="e#4353#5955#0#PHP" expanded="false" />
+            <element signature="e#5958#7242#0#PHP" expanded="false" />
+            <element signature="e#7245#8429#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Alipay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-40.714287">
+          <caret line="78" column="33" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Tool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5804878">
+          <caret line="660" column="28" selection-start-line="660" selection-start-column="28" selection-end-line="660" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phonepush/notification/ios/IOSFilecast.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3534884">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zmxy/ZmopSdk.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6511627">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phonepush/Demo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8965516">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="e#1078#2139#0#PHP" expanded="false" />
+            <element signature="e#2142#3293#0#PHP" expanded="false" />
+            <element signature="e#3296#4300#0#PHP" expanded="false" />
+            <element signature="e#4303#5905#0#PHP" expanded="false" />
+            <element signature="e#5908#7192#0#PHP" expanded="false" />
+            <element signature="e#7195#8379#0#PHP" expanded="false" />
+            <element signature="e#8525#9380#0#PHP" expanded="false" />
+            <element signature="e#10353#11324#0#PHP" expanded="false" />
+            <element signature="e#11371#12641#0#PHP" expanded="false" />
+            <element signature="e#12710#13939#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/jdroom/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53023255">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

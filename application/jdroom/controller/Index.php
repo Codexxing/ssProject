@@ -14,7 +14,10 @@ class Index extends AdminBase
 {
     protected function _initialize()
     {
+        vendor('phonepush.demo');
         parent::_initialize();
+        $demo = new \Demo('123','123');
+        var_dump($demo);die;
     }
 
     /**

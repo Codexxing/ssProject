@@ -245,7 +245,7 @@
                                     {/if}
                                 </div>
                                 {if condition="$is_interact eq 1"}
-                                    <button class="layui-btn layui-btn-radius" style="float: right;border-color: rgba(102, 204, 0, 1); " onclick="lookinteract('{$order}')">查看互动</button>
+                                    <button class="layui-btn layui-btn-radius" style="float: right;border-color: rgba(102, 204, 0, 1); " id="inter" onclick="lookinteract('{$order}')">查看互动</button>
                                 {/if}
                             </div>
                         </div>
@@ -465,6 +465,9 @@
         $('.layui-colla-content').addClass(' layui-show');
         $('button').attr('disabled',true);
         $('button').attr('class','layui-btn layui-btn-disabled layui-btn-radius');
+        //移除互动按钮禁用
+        $('#inter').attr('disabled',false);
+        $('#inter').attr('class','layui-btn  layui-btn-radius');
     }
     function lookinteract(order){
         layer.open({

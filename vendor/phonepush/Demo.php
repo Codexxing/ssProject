@@ -12,7 +12,7 @@ include(dirname(__FILE__) . '/' . 'notification/ios/IOSCustomizedcast.php');
 
 class Demo {
 	protected $appkey           = NULL; 
-	protected $appMasterSecret     = NULL;
+	protected $appMasterSecret  = NULL;
 	protected $timestamp        = NULL;
 	protected $validation_token = NULL;
 

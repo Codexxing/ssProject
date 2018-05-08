@@ -137,6 +137,13 @@ return [
     //调用e签宝二级域名
     'twoHost'=>'http://api.juedouxin.com',
     'base64Header'=>'data:image/png;base64,',//base64的头部
+    //友盟appkey
+    'youmeng'=>[
+        'y_appkey_now'=>'5aefaf7e8f4a9d59c4000116', //友盟现在appkey
+        'y_secret_now'=>'123', //友盟现在secret
+        'y_appkey_old'=>'593e30e0a40fa31bc6000304', //友盟以前appkey
+        'y_secret_old'=>'456' //友盟以前secret
+    ],
 
     // +----------------------------------------------------------------------
     // | 模块设置

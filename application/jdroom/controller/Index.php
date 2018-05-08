@@ -10,14 +10,15 @@ use think\Session;
  * Class Index
  * @package app\admin\controller
  */
+
 class Index extends AdminBase
 {
     protected function _initialize()
     {
         parent::_initialize();
-        vendor('phonepush.demo');
-        $demo = new \Demo('123','123');
-        var_dump($demo);die;
+//        vendor('phonepush.demo');
+//        $demo = new \Demo('123','123');
+//        var_dump($demo);die;
     }
 
     /**
@@ -26,21 +27,11 @@ class Index extends AdminBase
      */
     public function index()
     {
-        $redis = new \Redis();
+//        $redis = new \Redis();
              //连接
-     $redis->connect('127.0.0.1', 6379);
+//     $redis->connect('127.0.0.1', 6379);
      //检测是否连接成功
-     echo "redis Server is running: " . $redis->ping();
-//        $param['order_number']='SH2018042110255101';
-//        $conten =  Db::table('os_order_list')
-//            ->alias('list')
-//            ->join('os_letters_file file','list.order_number = file.order_number','LEFT')
-//            ->field('list.content,list.replenish_content,file.*')
-//            ->where(['list.order_number'=>$param['order_number'],'file.types'=>0])
-//            ->find();
-//        $conten['two_need']=Db::name('replenish')->where(['order_number'=>$param['order_number']])->select();
-//        $contPdf = pdfAddImg($conten);
-//        var_dump($contPdf);die;
+//     echo "redis Server is running: " . $redis->ping();
     
         $version = Db::query('SELECT VERSION() AS ver');
         $config  = [

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd23b41-091b-4f8f-98a1-51f0443dbab9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config.php" afterPath="$PROJECT_DIR$/application/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/jdroom/controller/Index.php" afterPath="$PROJECT_DIR$/application/jdroom/controller/Index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phonepush/Demo.php" afterPath="$PROJECT_DIR$/vendor/phonepush/Demo.php" />
     </list>
     <ignored path="juedoutest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,22 +96,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/jdroom/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29457363">
-              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+            <state vertical-scroll-proportion="-12.214286">
+              <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config.php">
+      <file leaf-file-name="Tool.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/index/controller/Tool.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.857142">
-              <caret line="144" column="42" selection-start-line="144" selection-start-column="42" selection-end-line="144" selection-end-column="42" />
-              <folding />
+            <state vertical-scroll-proportion="0.63255817">
+              <caret line="751" column="8" selection-start-line="751" selection-start-column="8" selection-end-line="751" selection-end-column="8" />
+              <folding>
+                <element signature="e#29142#30010#0#PHP" expanded="false" />
+                <element signature="e#30045#30923#0#PHP" expanded="false" />
+                <element signature="e#30943#33504#0#PHP" expanded="false" />
+                <element signature="e#33656#34104#0#PHP" expanded="false" />
+                <element signature="e#34146#34869#0#PHP" expanded="false" />
+                <element signature="e#34908#36182#0#PHP" expanded="false" />
+                <element signature="e#36341#37467#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,9 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/scp54068/etc/httpd/conf.d/test.juedouxin.com.conf" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp59500/etc/httpd/conf/httpd.conf" />
-        <option value="$USER_HOME$/AppData/Local/Temp/scp20323/var/www/html/ssProject/application/index/controller/Index.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp19091/var/www/html/ssProject/public/index.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp01307/var/www/html/ssProject/application/database.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp36869/var/www/html/ssProject/application/common/controller/HomeBase.php" />
@@ -174,10 +176,13 @@
         <option value="$PROJECT_DIR$/application/common.php" />
         <option value="$USER_HOME$/Desktop/umeng_php_sdk_v1.5/php/src/Demo.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp45344/var/www/html/sushe/application/config.php" />
-        <option value="$PROJECT_DIR$/application/config.php" />
         <option value="$PROJECT_DIR$/vendor/phonepush/Demo.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d8721ab9-a3a3-4139-a008-1f6c8aad7def/console.sql" />
         <option value="$PROJECT_DIR$/application/jdroom/controller/Index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp06865/etc/profile" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp12805/etc/httpd/conf.d/testapi.juedouxin.com.conf" />
+        <option value="$PROJECT_DIR$/application/config.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp17640/var/www/html/apieqb/API/comm/initConfig.php" />
       </list>
     </option>
   </component>
@@ -359,10 +364,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="834" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2820513" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20179948" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20179948" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28598973" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -391,20 +396,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.ssh/known_hosts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11292719">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.ssh/id_rsa.pub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -470,13 +461,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2883721">
           <caret line="575" column="0" selection-start-line="575" selection-start-column="0" selection-end-line="575" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-97.71429">
-          <caret line="96" column="55" selection-start-line="96" selection-start-column="55" selection-end-line="96" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -579,6 +564,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34728682">
           <caret line="293" column="9" selection-start-line="293" selection-start-column="9" selection-end-line="293" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -621,6 +607,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.928572">
           <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <element signature="n#pdfAddImg#0;n#!!top" expanded="false" />
+            <marker date="1525661405375" expanded="true" signature="3308:3343" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="3379:3417" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="4261:4299" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="8643:8678" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="8719:8772" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="8806:8827" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="8946:8964" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="9047:9085" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="9168:9206" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="9278:9316" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="9688:9726" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="9826:9864" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="9951:9989" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="10045:10083" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="10157:10195" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -649,6 +653,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-40.714287">
           <caret line="78" column="33" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -664,13 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.6511627">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Tool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="851" column="39" selection-start-line="851" selection-start-column="39" selection-end-line="851" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -733,19 +731,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp07054/etc/profile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="26" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp06865/etc/profile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6047548">
+          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12805/etc/httpd/conf.d/testapi.juedouxin.com.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16939078">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.857142">
-          <caret line="144" column="42" selection-start-line="144" selection-start-column="42" selection-end-line="144" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="137" column="40" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="130" column="29" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp17640/var/www/html/apieqb/API/comm/initConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8248062">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/jdroom/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29457363">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        <state vertical-scroll-proportion="-12.214286">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp21150/var/www/html/apieqb/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.897675">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp22695/var/www/html/apieqb/polop/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.004651">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Tool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63255817">
+          <caret line="751" column="8" selection-start-line="751" selection-start-column="8" selection-end-line="751" selection-end-column="8" />
+          <folding>
+            <element signature="e#29142#30010#0#PHP" expanded="false" />
+            <element signature="e#30045#30923#0#PHP" expanded="false" />
+            <element signature="e#30943#33504#0#PHP" expanded="false" />
+            <element signature="e#33656#34104#0#PHP" expanded="false" />
+            <element signature="e#34146#34869#0#PHP" expanded="false" />
+            <element signature="e#34908#36182#0#PHP" expanded="false" />
+            <element signature="e#36341#37467#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -135,7 +135,7 @@ return [
     'express_appSecret'=>'656cbe9618fcd31653fb85ac06aa0244',
 
     //调用e签宝二级域名
-    'twoHost'=>'http://api.juedouxin.com',
+    'twoHost'=>'http://testapi.juedouxin.com',
     'base64Header'=>'data:image/png;base64,',//base64的头部
     //友盟appkey
     'youmeng'=>[

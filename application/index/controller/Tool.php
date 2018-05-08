@@ -807,10 +807,9 @@ class Tool extends HomeBase{
                 $accept_name =Db::table('os_address')->where(['order_number'=>$number])->value('accept_name');
                 //创建印章并签署到pdf上
                 $info['shouquan'] = createImpowerPdf(1,['name'=>$name,'accept_name'=>$accept_name]);//创建授权书
-        var_dump($info);
+//        var_dump($info);
                 $tr = $this->createSealSignPdf($info);
                 $trd = json_decode($tr, true);
-        var_dump($trd);die;
                 if ($trd && $trd[0]['errCode'] == 0) {
                     Db::name('order_list')->where(['order_number' => $number])->update(['signServiceId' => $trd[0]['signServiceId'], 'updatetime' => getFormatTime(),'shouquanUrl'=>$trd[1]]);
                     jsonSend(1, '签署成功',['pdfurl'=>$trd[1],'shouquan'=> $info['shouquan']]);

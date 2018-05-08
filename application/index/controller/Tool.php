@@ -804,9 +804,10 @@ class Tool extends HomeBase{
                 $info['accountid'] =  $rr['accountId'];
             }
 //        array_key_exists('name',$info) ? $name = $info['']
-            $accept_name =Db::table('os_address')->where(['order_number'=>$number])->value('accept_name');
+                $accept_name =Db::table('os_address')->where(['order_number'=>$number])->value('accept_name');
                 //创建印章并签署到pdf上
                 $info['shouquan'] = createImpowerPdf(1,['name'=>$name,'accept_name'=>$accept_name]);//创建授权书
+        var_dump($info);
                 $tr = $this->createSealSignPdf($info);
                 $trd = json_decode($tr, true);
         var_dump($trd);die;

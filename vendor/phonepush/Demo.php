@@ -187,20 +187,20 @@ class Demo {
 
 	/**********************************************IOS版****************************************************************/
 //广播形式  向安装该App的所有设备发送消息
-	function sendIOSBroadcast() {
+	function sendIOSBroadcast($message) {
 		try {
 			$brocast = new IOSBroadcast();
 			$brocast->setAppMasterSecret($this->appMasterSecret);
 			$brocast->setPredefinedKeyValue("appkey",           $this->appkey);
 			$brocast->setPredefinedKeyValue("timestamp",        $this->timestamp);
 
-			$brocast->setPredefinedKeyValue("alert", "IOS 广播测试");
+			$brocast->setPredefinedKeyValue("alert", $message);
 			$brocast->setPredefinedKeyValue("badge", 0);
 			$brocast->setPredefinedKeyValue("sound", "chime");
 			// Set 'production_mode' to 'true' if your app is under production mode
 			$brocast->setPredefinedKeyValue("production_mode", "false");
 			// Set customized fields
-			$brocast->setCustomizedField("test", "helloworld");
+			//$brocast->setCustomizedField("test", "helloworld");
 			print("Sending broadcast notification, please wait...\r\n");
 			$brocast->send();
 			print("Sent SUCCESS\r\n");

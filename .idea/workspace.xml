@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd23b41-091b-4f8f-98a1-51f0443dbab9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/index/controller/Quene.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phonepush/Demo.php" afterPath="$PROJECT_DIR$/vendor/phonepush/Demo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/index/controller/Login.php" afterPath="$PROJECT_DIR$/application/index/controller/Login.php" />
     </list>
     <ignored path="juedoutest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,14 +55,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Quene.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Quene.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/controller/Quene.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6671827">
-              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+            <state vertical-scroll-proportion="-12.678572">
+              <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
               <folding>
                 <element signature="e#6#130#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/index/controller/Login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5247678">
+              <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,7 +95,6 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp55299/var/www/html/ssProject/application/database.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp55402/var/www/html/ssProject/application/jdroom/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/database.php" />
-        <option value="$PROJECT_DIR$/application/index/controller/Login.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Encypt.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Encrypt.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
@@ -128,6 +135,7 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp14036/var/www/html/sushe/application/jdroom/controller/Index.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp02188/var/www/html/sushe/application/index/view/index/index.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Quene.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/Login.php" />
       </list>
     </option>
   </component>
@@ -355,6 +363,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2883721">
           <caret line="575" column="0" selection-start-line="575" selection-start-column="0" selection-end-line="575" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -449,6 +458,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34728682">
           <caret line="293" column="9" selection-start-line="293" selection-start-column="9" selection-end-line="293" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -550,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="130" column="29" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/ab6a3dfe/d8721ab9-a3a3-4139-a008-1f6c8aad7def/sushe.os_order_list">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -580,6 +583,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40620154">
           <caret line="318" column="72" selection-start-line="318" selection-start-column="72" selection-end-line="318" selection-end-column="72" />
+          <folding>
+            <element signature="n#pdfAddImg#0;n#!!top" expanded="false" />
+            <marker date="1525661405375" expanded="true" signature="3308:3343" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="3379:3417" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="4261:4299" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="8643:8678" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="8719:8772" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="8806:8827" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="8946:8964" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="9047:9085" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="9168:9206" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="9278:9316" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="9688:9726" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="9826:9864" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="9951:9989" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="10045:10083" placeholder="..." />
+            <marker date="1525661405375" expanded="true" signature="10157:10195" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -641,11 +662,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Quene.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6671827">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        <state vertical-scroll-proportion="-12.678572">
+          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
           <folding>
             <element signature="e#6#130#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5247678">
+          <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>

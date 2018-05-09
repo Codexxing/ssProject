@@ -76,7 +76,7 @@ class Login extends HomeBase{
         if(Request::instance()->isPost() ){
                 $data = $this->request->param();
                 $is_phone = getOneUserVal(['mobile'=>$data['mobile']],'mobile');
-                if($is_phone){ jsonSend(0,'该手机号已经注册');exit;}
+//                if($is_phone){ jsonSend(0,'该手机号已经注册');exit;}
                  //首先看是不是存在邀请人的手机号 invite_phone
                 if(array_key_exists('invite_phone', $data)){
                     //验证验证码

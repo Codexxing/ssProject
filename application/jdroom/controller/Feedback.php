@@ -35,7 +35,7 @@ class Feedback extends AdminBase
             ->field('f.*,u.mobile')
             ->order('f.createtime desc')
             ->paginate();
-        echo Db::table('os_feedback')->getLastSql();
+//        echo Db::table('os_feedback')->getLastSql();
         return $this->fetch('index', ['res' => $list]);
     }
 

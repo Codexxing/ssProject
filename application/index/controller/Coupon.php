@@ -26,6 +26,7 @@ class Coupon extends HomeBase
         $this->userModel = new userModel();
         $this->todayDate = date('Y-m-d',time());
     }
+    //分享即可得到5块钱优惠券
 
     /**
      * 查看用户今天是否分享过
@@ -54,13 +55,10 @@ class Coupon extends HomeBase
         if(Request::instance()->post()){
             $uid = Request::instance()->param('uid');
             $time =Db::table('os_share')->where(['uid'=>$uid])->value('sharetime');
-            if($time) {
-//                if ($this->todayDate == $time) {
-//                    jsonSend(0,'今天已经分享过了');exit;
-//                }
-                Db::table('os_share')->where(['uid' => $uid])->setField('sharetime', $this->todayDate);
-            }else
-                Db::table('os_share')->insert(['uid'=>$uid,'sharetime'=>$this->todayDate]);
+            if($time)
+                Db::table('os_share')->where(['uid'=>$uid])->setField('sharetime',$this->todayDate);
+            else
+                Db::table('os_share')->insert(['uid'=>$uid,'sharetime',$this->todayDate]);
 
             //赠送优惠券
             Db::name('reduced')->insert([
@@ -70,8 +68,7 @@ class Coupon extends HomeBase
                 'is_use'=>0,
                 'reduce_number'=>createNumber(),
                 'is_conversion'=>1,
-//               'overtime'=>date('Y-m-d H:i:s',strtotime("+99 year")),
-               'overtime'=>'2099-12-31 '. date( "H:i:s "),
+               'overtime'=>date('Y-m-d H:i:s',strtotime("+1 year")),
                 'createtime'=>getFormatTime(),
                 'updatetime'=>getFormatTime(),
             ]);

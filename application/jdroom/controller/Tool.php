@@ -133,6 +133,8 @@ class Tool extends AdminBase
             }
            $signServiceId = Db::table('os_order_list')->where(['order_number' => $order])->value('signServiceId');
             if(!$signServiceId){ $this->error('请等待用户签名盖章之后在填写');        exit;}
+            $file =  Db::name('file_stamp')->where(['order_number'=>$order])->find();
+            if(!$file['file_stamp']){$this->error('请先上传盖好章的律师函');        exit;}
             $express_order = Request::instance()->param('value');//快递单号
             //验证订单号是否正确
 //            $is_number = searchExpressAli($express_order);
@@ -150,28 +152,20 @@ class Tool extends AdminBase
                 createLog('填写了快递单号，单号：' . $order . '，快递单号：' . $express_order);
                 //同时自动发送邮件给用户
                 //查询律师函
-                $file =  Db::name('layer_file')->where(['order_number'=>$order])->order('times desc')->find();
+//                $file =  Db::name('layer_file')->where(['order_number'=>$order])->order('times desc')->find();
                 $address = Db::name('address')->where(['order_number' => $order])->find();
-                $list = Db::name('order_list')->where(['order_number' => $order])->field('shouquanUrl,solid_url_after,express_number,uid')->find();
+                $list = Db::name('order_list')->where(['order_number' => $order])->field('shouquanUrl,solid_url_after,express_number')->find();
                 if(!$list['express_number']) {
                     if ($address['accept_type'] != 0) {
                         //给对方发邮件
-                        $r = $this->sendMaild($address['accept_email'], $file['files'], $address, 1, '');
+                        $r = $this->sendMaild($address['accept_email'], $file['file_stamp'], $address, 1, '');
                         if ($r)
                             Db::table('os_order_list')->where(['order_number' => $order])->setField('email_complete', 1);
                     }
                     //给发件人发邮件
-                    $this->sendMaild($address['send_email'], $file['files'], $address, 0, $list);
+                    $this->sendMaild($address['send_email'], $file['file_stamp'], $address, 0, $list);
                     $sms = new Tools();
                     $sms->sendSms(['order' => $order, 'mobile' => $this->userPhone, 'content' => '你的函件已投递']);
-                    //给邀请者赠送优惠券
-                    $invite_id = getOneUserVal(['id'=>$list['uid']],'invite_id');
-                    $data=[
-                        'uid'=>$invite_id,
-                        'money'=>config::get('coupon.order_completed'),
-                        'types'=>5
-                    ]; //然后对注册者赠送优惠券
-                   giveCoupon($data);
                 }else{
                     Db::table('os_order_list')->where(['order_number' => $order])->setField('express_number', $express_order);
                 }

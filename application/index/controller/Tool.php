@@ -571,7 +571,7 @@ class Tool extends HomeBase{
             $name='';
             if($phone['company_id'] && $phone['usertype']==1 ){//正式认证为企业了
                 $codes = Db::table('os_company')->where(['id'=>$phone['company_id']])->value('com_cod');
-                $name =Db::table('os_white_company')->where(['com_cod'=>$codes,'status'=>1])->value('com_name');//公司名称
+                $name =Db::table('os_white_company')->where(['com_cod'=>$codes,'status'=>1])->value('com_name');//查看启用的公司名称
             }
 //            var_dump($name);
             if(empty($name)) {
@@ -655,9 +655,9 @@ class Tool extends HomeBase{
             $token = Request::instance()->header('token');
             $phone = getOneUserVal(['id'=>$uid],'mobile');
             $v = validateUser('token',$phone,$token);
-//            if($v>0){
-//                jsonSend(3,'验证信息已失效');exit;
-//            }
+            if($v>0){
+                jsonSend(3,'验证信息已失效');exit;
+            }
             $res = searchExpressAli($number);
             $res->status == 0 ?  $data =  $res->result->list : $data ='';
             jsonSend($res->status, $res->msg,$data);
@@ -804,12 +804,12 @@ class Tool extends HomeBase{
                 $info['accountid'] =  $rr['accountId'];
             }
 //        array_key_exists('name',$info) ? $name = $info['']
-                $accept_name =Db::table('os_address')->where(['order_number'=>$number])->value('accept_name');
+            $accept_name =Db::table('os_address')->where(['order_number'=>$number])->value('accept_name');
                 //创建印章并签署到pdf上
                 $info['shouquan'] = createImpowerPdf(1,['name'=>$name,'accept_name'=>$accept_name]);//创建授权书
-//        var_dump($info);
                 $tr = $this->createSealSignPdf($info);
                 $trd = json_decode($tr, true);
+//        var_dump($trd);die;
                 if ($trd && $trd[0]['errCode'] == 0) {
                     Db::name('order_list')->where(['order_number' => $number])->update(['signServiceId' => $trd[0]['signServiceId'], 'updatetime' => getFormatTime(),'shouquanUrl'=>$trd[1]]);
                     jsonSend(1, '签署成功',['pdfurl'=>$trd[1],'shouquan'=> $info['shouquan']]);

@@ -3,19 +3,13 @@ namespace app\index\controller;
 
 use app\common\controller\HomeBase;
 use think\Db;
-use app\index\controller\Encrypt;
+use PHPMailer\PHPMailer\PHPMailer;
+use tcpdf\tcpdf;
 
 class Index extends HomeBase
 {
     public function index()
     {
-        $Encypt = new Encrypt('9696');
-        $md5 =md5('liyang');
-        var_dump($md5);
-        $jia = $Encypt->jdEncrypt($md5);
-        $jie = $Encypt->jdDecrypt($jia);
-         var_dump($jia);
-          var_dump($jie);die;
 ////        $this->sendMaild('951402124@qq.com',1,1);
 //        header("Content-type: text/html; charset=utf-8");
 ////        $rd =turnAmount(1030.32);
@@ -25,9 +19,12 @@ class Index extends HomeBase
         return $this->fetch();
     }
 
-public function ijn(){
-    return $this->fetch();
-}
+    public function about(){
+        return $this->fetch();
+    }
+    public function helpcenter(){
+        return $this->fetch();
+    }
 
 
     /**这是好的 测试通过的**/

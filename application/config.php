@@ -17,9 +17,9 @@ return [
     // 应用命名空间
     'app_namespace'          => 'app',
     // 应用调试模式
-    'app_debug'              => true,
+    'app_debug'              => false,
     // 应用Trace
-    'app_trace'              => true,
+    'app_trace'              => false,
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
@@ -110,11 +110,7 @@ return [
         'esignUrlTest'=>'http://smlrealname.tsign.cn:8080'//企业认证打款的测试环境
     ],
     'indexUrl'=>'/static/index',//前端页面的路径
-//   优惠券的钱数
-    'coupon'=>[
-        'invite_reg'=>28,//邀请注册的
-        'order_completed'=>58,//好友注册后首次完成订单
-    ],
+//    'adminUrl'=>'/static/newlayui',//后台新版layui路径
 
     // 验证码配置
     'captcha'                => [
@@ -130,20 +126,25 @@ return [
         'reset'    => true
     ],
     //快递信息配置
+//    'express_appCode'=>'150a983c45d246f6913cdc2f34dcd46c',//原始的
+//    'express_appKey'=>'24803712',
+//    'express_appSecret'=>'483fb239bd4668183faeb20ae5f71d2b',
     'express_appCode'=>'409149924c6542ddbb9ca6589ab0f206',
     'express_appKey'=>'24868634',
     'express_appSecret'=>'656cbe9618fcd31653fb85ac06aa0244',
 
     //调用e签宝二级域名
-    'twoHost'=>'http://testapi.juedouxin.com',
+    'twoHost'=>'http://api.juedouxin.com',
     'base64Header'=>'data:image/png;base64,',//base64的头部
     //友盟appkey
     'youmeng'=>[
-        'y_appkey_now'=>'5aefaf7e8f4a9d59c4000116', //友盟现在appkey
-        'y_secret_now'=>'123', //友盟现在secret
+        'y_appkey_now_ios'=>'5aefaf7e8f4a9d59c4000116', //友盟ios现在appkey
+        'y_secret_now_ios'=>'aidlt2bu4thgs7uq1yfdbysuqxqydfsc', //友盟ios现在secret
         'y_appkey_old'=>'593e30e0a40fa31bc6000304', //友盟以前appkey
         'y_secret_old'=>'456' //友盟以前secret
     ],
+
+
 
     // +----------------------------------------------------------------------
     // | 模块设置

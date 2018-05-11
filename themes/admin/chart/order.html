@@ -1,0 +1,118 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <!--<li class="layui-this">内容分析</li>-->
+            <li class="layui-this"><a class="">用户分析</a></li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <ul>
+                    <li class="layui-inline li_line">
+                    </li><br>
+                    <a href="/manage/Useranalysis/index?dataTime=1"><li class="layui-inline">
+                        <button class="layui-btn layui-btn-sm" dataTime="1"  style="border-color: snow;">今天</button>
+                    </li></a>
+                    <a href="/manage/Useranalysis/index?dataTime=-1"> <li class="layui-inline">
+                        <button class="layui-btn layui-btn-sm" dataTime="-1" style="border-color: snow;">昨天</button>
+                    </li></a>
+                    <li class="layui-inline li_line"><img src="__STATIC__/images/u33.png"></li>
+                    <a href="/manage/Useranalysis/index?dataTime=7"><li class="layui-inline">
+                        <button class="layui-btn layui-btn-sm" dataTime="7" style="border-color: snow;">7天</button>
+                    </li></a>
+
+                    <a href="/manage/Useranalysis/index?dataTime=30"><li class="layui-inline">
+                        <button class="layui-btn layui-btn-sm" dataTime="30" style="border-color: snow;">30天</button>
+                    </li></a>
+                    <li class="layui-inline li_line"><img src="__STATIC__/images/u33.png"></li>
+                    <li class="layui-inline li_line">
+                        <div class="layui-inline">
+                            <input type="text" class="layui-input" id="usertime" style="width: 290px;">
+                        </div>
+                    </li>
+                    <li class="layui-inline li_line">
+                        <a class="layui-btn layui-btn-primary" href="" target="_blank" title="下载EXCEL表格" >
+                            <i class="layui-icon" >&#xe601;</i>
+                        </a>
+                    </li>
+                </ul>
+                <table class="layui-table">
+                    <thead>
+                    <tr>
+                        <th>用户总数</th>
+                        <th>大V总数</th>
+                        <th>登录用户</th>
+                        <th>新增用户</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td >1</td>
+                        <td>1</td>
+                        <td >1</td>
+                        <td >1</td>
+                    </tbody>
+                </table>
+
+                <div id="usermain" style="width:1200px;height:400px;margin-top:50px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/block}
+{block name="js"}
+    <script src="__JS__/echarts.min.js"></script>
+{/block}
+{block name="script"}
+<script>
+    var myChart = echarts.init(document.getElementById("usermain"));
+    option = {
+        title:{
+            text: '用户数据详情',
+            subtext: '数量'
+        },
+        xAxis: {
+            type: 'category',
+            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        itemStyle:{
+            normal:{
+                color:'#ccc'
+            }
+        },
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        series: [{
+            name:'数量',
+            data: [120, 200, 150, 80, 70, 110, 130],
+            type: 'bar',
+            barWidth: 50,
+            itemStyle:{
+                normal:{
+                    color:'#5FB878'
+                }
+            },
+            label: {
+                normal: {
+                    show: true,            //显示数字
+                    position: 'top',        //这里可以自己选择位置
+                    color:'black'
+                }
+            }
+        }]
+    };
+
+    // 为echarts对象加载数据
+    myChart.setOption(option);
+</script>
+{/block}

@@ -200,10 +200,11 @@ class Writeletter extends HomeBase{
     }
     /**
      *提交邮戳的补充资料
-     * @param 资料的集合  和  uid 和  order_number 和token 和is_have用户是否有资料进行补充  0没有资料 1补充完毕
+     * @param 资料的集合  和  uid 和  order_number 和token 和is_have用户是否有资料进行补充  0没有资料（不用补充） 1补充完毕（有补充，补充完毕了）
      * */
     public function submitFile(){
         if(Request::instance()->isPost()){
+            $mess =0;
             Db::startTrans();
             try{
                 $param = Request::instance()->param();//uid  order_number   replenish_content  is_have四个参数
@@ -236,6 +237,12 @@ class Writeletter extends HomeBase{
                             Db::name('letters_file')->insert(['order_number'=>$param['order_number'],'file'=>$url,'status'=>1,'createtime'=>getFormatTime(),'updatetime'=>getFormatTime()]);
                             $arr['replenishId']= Db::name('letters_file')->getLastInsID();
                         }
+                        Db::name('replenish')->insert([
+                            'order_number'=>$param['order_number'],
+                            'content'=>$param['replenish_content'],
+                            'url'=> $url,
+                            'createtime'=> getFormatTime()
+                        ]);
                         break;
                     case 0:
                         $fileUrl='';
@@ -248,7 +255,7 @@ class Writeletter extends HomeBase{
                 $mess =1;
         } catch (\Exception $e) {
             // 回滚事务
-                $mess =0;
+
         }
             if($mess ==1) {
                 jsonSend(1, '更新成功', ['order_number' => $param['order_number'], 'userId' => $param['uid'], 'url' => $fileUrl]);
@@ -302,9 +309,9 @@ class Writeletter extends HomeBase{
             $token = Request::instance()->header('token');
             $phone = getOneUserVal(['id'=>$param['uid']],'mobile');
             $v = validateUser('token',$phone,$token);
-            if($v>0){
-                jsonSend(3,'验证信息已失效');exit;
-            }
+//            if($v>0){
+//                jsonSend(3,'验证信息已失效');exit;
+//            }
             !array_key_exists('status',$param) ? $status = 0 : $status = $param['status'];
             switch($status){
                 case 0:
@@ -328,7 +335,9 @@ class Writeletter extends HomeBase{
             foreach($res as $k=>$v){
                 $address= Db::name('address')->where(['order_number'=>$v['order_number']])->field('accept_name,accept_phone,accept_address,accept_email,companyCode')->find();
                 $address ?  $res[$k]['address']=$address :  $res[$k]['address']=['accept_name'=>'','accept_phone'=>'','accept_address'=>'','accept_email'=>'','companyCode'=>''];
-                $money= Db::name('rewards')->where(['order_number'=>$v['order_number'],'pay_status'=>1])->value('total_amount');
+//                $money= Db::name('rewards')->where(['order_number'=>$v['order_number'],'pay_status'=>1])->value('total_amount');
+                $moneys= Db::name('rewards')->where(['order_number'=>$v['order_number'],'pay_status'=>1])->find();
+                $moneys['client_type']==0 ?  $money = $moneys['total_amount']/100 : $money=$moneys['total_amount'];//微信和支付宝
                 $money ? $res[$k]['payMoney']=$money : $res[$k]['payMoney']='';
                 if($v['recude_id'] !=0){
                     $res[$k]['reduce'] = Db::table('os_reduced')->where(['id'=>$v['recude_id']])->value('money') ;//优惠的钱

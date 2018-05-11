@@ -298,6 +298,29 @@ laydate.render({
     }
 })
 
+//用户分析的时间选择  开始时间
+laydate.render({
+    elem: '#usertime_start',
+    type: 'datetime',
+    trigger: 'click',
+    change: function(value, date){ //监听日期被切换
+        lay('#usertime').html(value);
+    }
+})
+//用户分析的时间选择  结束时间
+laydate.render({
+    elem: '#usertime_end',
+    type: 'datetime',
+    trigger: 'click',
+    change: function(value, date){ //监听日期被切换
+        lay('#usertime').html(value);
+    },
+    done:function(value,date,endDate){
+
+    }
+})
+
+
 /**
  * 通用批量处理（审核、取消审核、删除）
  */
@@ -843,3 +866,14 @@ $('#uploadDown').click(function(){
         content: ['/jdroom/Orderlist/getShowUpload?order='+order,'no']
     });
 })
+//用户分析的时间搜索提交
+function timeSearchUser(){
+    var startTime = $('#usertime_start').val();
+    var endTime = $('#usertime_end').val();
+    if(endTime < startTime){
+        layer.msg('开始时间不能大于结束时间');return false;
+    }
+    $.post('jdroom/Chart/user',{start:startTime,end:endTime},function(res){
+
+    })
+}

@@ -251,7 +251,7 @@ class Orderlist extends AdminBase
                     if($list['paystatus']==1){
                         $list['orderstatus'] = '已支付';
                         //已支付了 用户是否确认律师函或者正在出涵  或者等待用户确认
-                        if($list['layerletter_have'] == 0){//是否已出律师函 0正在出涵  1已出函
+                        if($list['layerletter_have'] == 0 && $list['layerIssue'] == 1){//是否已出律师函 0正在出涵  1已出函
                             $list['orderstatus'] = '正在出函';
                         }else  if($list['layerletter_have'] == 1){
                             switch($list['is_issue']){//用户对律师函有问题  0有问题  1没问题确认发函  2等待用户确认

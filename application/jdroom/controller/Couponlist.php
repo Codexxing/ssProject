@@ -82,7 +82,7 @@ class Couponlist extends AdminBase
                 'is_conversion'=> 0,
                 'createtime'=>date('Y-m-d H:i:s',time()),
                 'updatetime'=>date('Y-m-d H:i:s',time()),
-                'overtime'=>date('Y-m-d H:i:s',strtotime("+1 year"))
+                'overtime'=>date('Y-m-d H:i:s',strtotime("+100 year"))
             ];
         for($i=1;$i<=intval($data['num']);++$i){
                $num = mt_rand(100000,990000);

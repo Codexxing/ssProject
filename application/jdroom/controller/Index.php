@@ -4,35 +4,41 @@ namespace app\jdroom\controller;
 use app\common\controller\AdminBase;
 use think\Db;
 use think\Session;
+use think\Config;
 
 /**
  * 后台首页
  * Class Index
  * @package app\admin\controller
  */
-
 class Index extends AdminBase
 {
     protected function _initialize()
     {
         parent::_initialize();
-//        vendor('phonepush.demo');
-//        $demo = new \Demo('123','123');
-//        var_dump($demo);die;
     }
-
     /**
      * 首页
      * @return mixed
      */
     public function index()
     {
-//        $redis = new \Redis();
-             //连接
-//     $redis->connect('127.0.0.1', 6379);
-     //检测是否连接成功
-//     echo "redis Server is running: " . $redis->ping();
-    
+
+//        $param['type'] = 'Broadcast';
+//        $param['message'] = 'wos是测试';
+//        $host = config::get('twoHost');
+//        $ch = curl_init();
+//        curl_setopt($ch, CURLOPT_URL, $host.'/push/Demo.php');
+//        curl_setopt($ch, CURLOPT_POST, 1);
+//        curl_setopt($ch, CURLOPT_POSTFIELDS, $param);
+//        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+//        $resonse =curl_exec($ch);
+//        curl_close($ch);
+//        if(!$resonse){
+//            jsonSend(0,'获取失败','');
+//        }else {
+//            jsonSend(1, '获取成功', $resonse);
+//        }die;
         $version = Db::query('SELECT VERSION() AS ver');
         $config  = [
             'url'             => $_SERVER['HTTP_HOST'],
